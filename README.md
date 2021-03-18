@@ -9,16 +9,18 @@ install wstool: follow the steps described in http://wiki.ros.org/wstool
 install and configure rosdep: follow the steps described in http://wiki.ros.org/rosdep
 
 
-installare git
-
+instal git and other depedencies
+```
 sudo apt install git
-
+sudo apt install libqt5charts5-dev
+```
 
 If some packages require a password, ask to Manuel Beschi
 to permantely store the password
 
+```
 git config --global crendential.helper store
-
+```
 
 
 create a workspace (examples: /home/user/catkin_ws /home/user/projects/ros_ws)
