@@ -46,3 +46,10 @@ rosdep install --from-paths src --ignore-src -r -y
 catkin build -cs
 ```
 
+
+Usefull commands
+
+* clean all the deleted packages
+```
+catkin clean --orphans
+```
