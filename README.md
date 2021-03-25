@@ -53,3 +53,13 @@ catkin build -cs
 ```
 catkin clean --orphans
 ```
+
+
+
+### Debug commands
+
+* disable thread message in gdb:
+```
+nano ~/.gdbinit
+set print thread-events off
+```
