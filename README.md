@@ -49,6 +49,7 @@ catkin build -cs
 
 ## Usefull commands
 
+### catkin commands
 * clean all the deleted packages
 ```
 catkin clean --orphans
