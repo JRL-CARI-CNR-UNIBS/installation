@@ -47,7 +47,7 @@ catkin build -cs
 ```
 
 
-## Usefull commands
+## Useful commands
 
 ### catkin commands
 * clean all the deleted packages
