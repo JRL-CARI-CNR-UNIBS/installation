@@ -78,7 +78,7 @@ git difftool HEAD origin/HEAD
 git difftool HEAD^ HEAD
 ```
 
-* see unstaged files
+* see unstaged files (the files that you don't add with _git add -A_)
 ```
 git difftool
 ```
