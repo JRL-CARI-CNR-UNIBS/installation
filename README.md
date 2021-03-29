@@ -80,7 +80,7 @@ git difftool HEAD^ HEAD
 
 * see unstaged files
 ```
-gitdiff_unstaged='git difftool'
+git difftool
 ```
 
 * you can put these line in ~/.bashrc to create a shortcut
