@@ -3,6 +3,9 @@
     local-name: cari_jrl/sharework_cell
     uri: https://bitbucket.org/iras-ind/sharework_cell
 - git:
+    local-name: cari_jrl/sharework_assembly
+    uri: https://bitbucket.org/iras-ind/sharework_assembly.git
+- git:
     local-name: safety/ssm_safety
     uri: https://github.com/CNR-STIIMA-IRAS/ssm_safety.git
 - git:
