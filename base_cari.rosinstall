@@ -34,7 +34,10 @@
     uri: https://bitbucket.org/CNR-ITIA/itia_ros_controllers.git
 - git:
     local-name: manipulation
-    uri: https://github.com/JRL-CARI-CNR-UNIBS/manipulation.git
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/manipulation.git 
+- git:
+    local-name: manipulation_examples
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/manipulation_examples.git
 - git:
     local-name: motion/human_aware_motion_planners
     uri: https://bitbucket.org/iras-ind/human_aware_motion_planners
