@@ -28,6 +28,9 @@
     local-name: devices/robots/ur/universal_robot_hardware_interface
     uri: https://bitbucket.org/iras-ind/universal_robot_hardware_interface.git
 - git:
+    local-name: devices/armband/
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/ros_myo.git
+- git:
     local-name: motion/human_aware_motion_planners
     uri: https://bitbucket.org/iras-ind/human_aware_motion_planners
     version: version2
