@@ -45,6 +45,14 @@ wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
 catkin build -cs
 ```
+## troubleshooting
+
+cannot connect with the UR10e robot:
+
+1) do you ping the robot (ping 192.168.10.1)
+2) can you login to the robot (ssh root@192.168.10.1  pwd:easybot)
+3) do you open the firewall ports?  sudo ufw allow 50001/tcp  AND    sudo ufw allow 50002/tcp
+
 
 
 ## Useful commands
