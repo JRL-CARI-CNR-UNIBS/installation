@@ -27,19 +27,15 @@ The package _robotiq_3f_gripper_articulated_gazebo_plugins_ could fail during co
 
 Now, add the repository to path:
 ```
-gedit ~/.bashrc
-```
-add a line at the end:
-```
-source /home/[YOUR_USERNAME]/projects/third_parties_ws/devel/setup.bash
+echo "source /home/$USER/projects/third_parties/devel/setup.bash" >> ~/.bashrc
 ```
 To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
 
 
 ### workspace 2: control repository
 ```
-mkdir -p ~/projects/control/src
-cd ~/projects/control
+mkdir -p ~/projects/control_ws/src
+cd ~/projects/control_ws
 catkin init
 wstool init src
 mkdir rosinstall
@@ -49,6 +45,8 @@ wstool merge -t src ./rosinstall/rosdyn.rosinstall
 wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/cnr_ros_control.rosinstall -P ./rosinstall
 wstool merge -t src ./rosinstall/cnr_ros_control.rosinstall
 
+wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/controllers.rosinstall -P ./rosinstall
+wstool merge -t src ./rosinstall/controllers.rosinstall
 
 wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
@@ -58,10 +56,32 @@ catkin build -cs --mem-limit 50%
 
 Now, add the repository to path:
 ```
-gedit ~/.bashrc
+echo "source /home/$USER/projects/control_ws/devel/setup.bash" >> ~/.bashrc
 ```
-add a line at the end:
+To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
+
+
+### workspace 3: motion and task planning repository
 ```
-source /home/[YOUR_USERNAME]/projects/control_ws/devel/setup.bash
+mkdir -p ~/projects/planning_ws/src
+cd ~/projects/planning_ws
+catkin init
+wstool init src
+mkdir rosinstall
+wget https://raw.githubusercontent.com/CNR-STIIMA-IRAS/rosdyn/master/rosdyn.rosinstall -P ./rosinstall
+wstool merge -t src ./rosinstall/rosdyn.rosinstall
+
+wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/motion_and_task_planning.rosinstall -P ./rosinstall
+wstool merge -t src ./rosinstall/motion_and_task_planning.rosinstall
+
+wstool update -t src
+rosdep install --from-paths src --ignore-src -r -y
+catkin config -j $(nproc --ignore=2)
+catkin build -cs --mem-limit 50%
+```
+
+Now, add the repository to path:
+```
+echo "source /home/$USER/projects/planning_ws/devel/setup.bash" >> ~/.bashrc
 ```
 To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
