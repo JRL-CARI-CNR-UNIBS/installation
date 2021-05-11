@@ -1,0 +1,206 @@
+- git:
+    local-name: cnr_safety
+    uri: https://bitbucket.org/CNR-ITIA/cnr_safety.git
+- git:
+    local-name: common/additional_sensor_msgs
+    uri: https://github.com/CNR-STIIMA-IRAS/additional_sensor_msgs
+- git:
+    local-name: common/binary_logger
+    uri: https://github.com/CNR-STIIMA-IRAS/binary_logger
+- git:
+    local-name: common/cnr_logger
+    uri: https://github.com/CNR-STIIMA-IRAS/cnr_logger
+- git:
+    local-name: common/eigen_control_toolbox
+    uri: https://github.com/CNR-STIIMA-IRAS/eigen_control_toolbox
+- git:
+    local-name: common/eigen_utils
+    uri: https://github.com/CNR-STIIMA-IRAS/eigen_utils
+- git:
+    local-name: common/name_sorting
+    uri: https://github.com/CNR-STIIMA-IRAS/name_sorting
+- git:
+    local-name: common/realtime_utilities
+    uri: https://github.com/CNR-STIIMA-IRAS/realtime_utilities
+- git:
+    local-name: common/rosparam_utilities
+    uri: https://github.com/CNR-STIIMA-IRAS/rosparam_utilities
+- git:
+    local-name: common/subscription_notifier
+    uri: https://github.com/CNR-STIIMA-IRAS/subscription_notifier
+- git:
+    local-name: common/tf_helper
+    uri: https://github.com/CNR-STIIMA-IRAS/tf_helper
+- git:
+    local-name: common/trac_ik
+    uri: https://bitbucket.org/traclabs/trac_ik
+- git:
+    local-name: control/assembly_controllers
+    uri: https://github.com/CNR-STIIMA-IRAS/assembly_controllers
+- git:
+    local-name: control/cnr_control_toolbox
+    uri: https://github.com/CNR-STIIMA-IRAS/cnr_control_toolbox
+- git:
+    local-name: control/cnr_hardware_interface
+    uri: https://github.com/CNR-STIIMA-IRAS/cnr_hardware_interface
+- git:
+    local-name: control/cnr_motion_control
+    uri: https://github.com/CNR-STIIMA-IRAS/cnr_motion_control
+- git:
+    local-name: control/cnr_ros_control
+    uri: https://github.com/CNR-STIIMA-IRAS/cnr_ros_control
+- git:
+    local-name: control/cnr_ros_controllers
+    uri: https://github.com/CNR-STIIMA-IRAS/cnr_ros_controllers
+- git:
+    local-name: control/cnr_ros_regulators
+    uri: https://github.com/CNR-STIIMA-IRAS/cnr_ros_regulators
+- git:
+    local-name: control/configuration_msgs
+    uri: https://github.com/CNR-STIIMA-IRAS/configuration_msgs.git
+- git:
+    local-name: control/elastoplastic_phri_controller
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/elastoplastic_phri_controller
+- git:
+    local-name: control/force_and_impedance_controllers
+    uri: https://github.com/CNR-STIIMA-IRAS/force_and_impedance_controllers
+- git:
+    local-name: control/itia_ros_control
+    uri: https://bitbucket.org/CNR-ITIA/itia_ros_control.git
+    version: start_end_of_life
+- git:
+    local-name: control/itia_ros_controllers
+    uri: https://bitbucket.org/CNR-ITIA/itia_ros_controllers.git
+- git:
+    local-name: devices/fourbythree
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/fourbythree_robot.git
+- git:
+    local-name: devices/high_dof_robots
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/high_dof_snake_robots.git
+- git:
+    local-name: devices/itia_ndlcom_hardware_interface
+    uri: https://bitbucket.org/iras-ind/itia_ndlcom_hardware_interface.git
+#- git:
+#    local-name: devices/lab_descriptions
+#    uri: https://bitbucket.org/iras-ind/lab_descriptions
+- git:
+    local-name: devices/robotiq
+    uri: https://github.com/ros-industrial/robotiq
+- git:
+    local-name: devices/robotiq_ur_modbus
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/robotiq_ur_modbus.git
+- git:
+    local-name: devices/robots/ur/Universal_Robots_ROS_Driver
+    uri: https://github.com/UniversalRobots/Universal_Robots_ROS_Driver
+- git:
+    local-name: devices/robots/ur/universal_robot
+    uri: https://github.com/fmauch/universal_robot.git
+    version: calibration_devel
+- git:
+    local-name: devices/robots/ur/universal_robot_hardware_interface
+    uri: https://bitbucket.org/iras-ind/universal_robot_hardware_interface.git
+- git:
+    local-name: devices/robots/ur/ur10e_robotiq_simplified
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/ur10e_robotiq_simplified
+- git:
+    local-name: devices/robots/ur/ur_cb3_hw
+    uri: https://CNR-ITIA@bitbucket.org/iras-ind/ur_cb3_hw.git
+- git:
+    local-name: devices/robots/ur/ur_simplified
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/ur_simplified
+- git:
+    local-name: devices/ros_myo
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/ros_myo
+- git:
+    local-name: interaction/imu_teleop
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/imu_teleop.git
+- git:
+    local-name: manipulation
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/manipulation
+- git:
+    local-name: manipulation_examples
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/manipulation_examples
+- git:
+    local-name: misc/graph_display
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/graph_display
+- git:
+    local-name: motion/deterministic_replanning
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/deterministic_replanning
+- git:
+    local-name: motion/human_aware_motion_planners
+    uri: https://bitbucket.org/iras-ind/human_aware_motion_planners
+    version: manuel-devel
+- git:
+    local-name: motion/moveit/moveit_planning_helper
+    uri: https://github.com/CNR-STIIMA-IRAS/moveit_planning_helper
+- git:
+    local-name: motion/multigoal_test
+    uri: https://github.com/CNR-STIIMA-IRAS/multigoal_test.git
+- git:
+    local-name: motion/online_replanner
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/online_replanner
+- git:
+    local-name: motion/thor/task_based_controllers
+    uri: https://bitbucket.org/iras-ind/task_based_controllers.git
+- git:
+    local-name: motion/thor/task_math
+    uri: https://bitbucket.org/iras-ind/task_math.git
+- git:
+    local-name: motion/thor/thor_controllers
+    uri: https://bitbucket.org/iras-ind/thor_controllers.git
+- git:
+    local-name: motion/thor/thor_core
+    uri: https://bitbucket.org/iras-ind/thor_core.git
+- git:
+    local-name: motion/thor/thor_impedance_controller
+    uri: https://bitbucket.org/iras-ind/thor_impedance_controller.git
+- git:
+    local-name: newbie/introduzione_ros
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/introduzione_ros
+- git:
+    local-name: perception/easy_handeye
+    uri: https://github.com/IFL-CAMP/easy_handeye
+- git:
+    local-name: perception/magut_calib
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/magut_calibration.git
+- git:
+    local-name: perception/object_loader
+    uri: https://bitbucket.org/iras-ind/object_loader.git
+- git:
+    local-name: perception/pcl_perception
+    uri: https://bitbucket.org/CNR-ITIA/pcl_perception
+    version: devel
+- git:
+    local-name: perception/pickplace_human_wrapper
+    uri: https://CNR-ITIA@bitbucket.org/iras-ind/pickplace_human_wrapper.git
+- git:
+    local-name: projects/hrc_simulator/hrc-cell
+    uri: https://bitbucket.org/iras-ind/hrc-cell.git
+- git:
+    local-name: projects/hrc_simulator/hrc_mosaic_test
+    uri: https://bitbucket.org/iras-ind/hrc_mosaic_test.git
+- git:
+    local-name: projects/hrc_simulator/task-planner-interface
+    uri: https://bitbucket.org/CNR-ITIA/task-planner-interface
+- git:
+    local-name: projects/panda_moveit_config
+    uri: https://github.com/ros-planning/panda_moveit_config.git
+    version: melodic-devel
+- git:
+    local-name: projects/tofas_human_awareness
+    uri: https://CNR-ITIA@bitbucket.org/iras-ind/tofas_human_awareness.git
+- git:
+    local-name: rosdyn
+    uri: https://github.com/CNR-STIIMA-IRAS/rosdyn
+- git:
+    local-name: rosdyn_examples
+    uri: https://github.com/CNR-STIIMA-IRAS/rosdyn_examples.git
+- git:
+    local-name: rosdyn_utilities
+    uri: https://github.com/CNR-STIIMA-IRAS/rosdyn_utilities
+- git:
+    local-name: safety/ssm_safety
+    uri: https://github.com/CNR-STIIMA-IRAS/ssm_safety.git
+- git:
+    local-name: visualization/cnr_robot_visual_tools
+    uri: https://bitbucket.org/CNR-ITIA/cnr_robot_visual_tools

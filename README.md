@@ -46,7 +46,7 @@ rosdep install --from-paths src --ignore-src -r -y
 catkin build -cs
 ```
 
-## Installation on multiple (overlayed workspaces)
+## Installation on multiple (overlayed) workspaces
 _see [here](https://catkin-tools.readthedocs.io/en/latest/mechanics.html#workspace-chaining-extending)_
  for details
 
@@ -57,10 +57,55 @@ Before start:
 2) you may want to change the directory path. If yes, adjust the instructions accordingly.
 
 ### workspace 1: third-parties repository
+```
 mkdir -p ~/projects/third_parties_ws/src
 cd ~/projects/third_parties_ws
 catkin init
+wstool init src
+mkdir rosinstall
+wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/third_parties.rosinstall -P ./rosinstall
+wstool merge -t src rosinstall/third_parties.rosinstall
+rosdep install --from-paths src --ignore-src -r -y
+catkin build -cs
+```
 
+The package _robotiq_3f_gripper_articulated_gazebo_plugins_ could fail during compilation, but it is not needed.
+
+Now, add the repository to path:
+```
+gedit ~/.bashrc
+```
+add a line at the end:
+```
+source /home/[YOUR_USERNAME]/projects/third_parties_ws/devel/setup.bash
+```
+To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
+
+
+### workspace 2: common repository
+```
+mkdir -p ~/projects/common_ws/src
+cd ~/projects/common_ws
+catkin init
+wstool init src
+mkdir rosinstall
+wget https://raw.githubusercontent.com/CNR-STIIMA-IRAS/rosdyn/master/rosdyn.rosinstall
+wstool merge -t src ./rosdyn.rosinstall
+rosdep install --from-paths src --ignore-src -r -y
+catkin build -cs
+```
+
+The package _robotiq_3f_gripper_articulated_gazebo_plugins_ could fail during compilation, but it is not needed.
+
+Now, add the repository to path:
+```
+gedit ~/.bashrc
+```
+add a line at the end:
+```
+source /home/[YOUR_USERNAME]/projects/third_parties_ws/devel/setup.bash
+```
+To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
 
 ## troubleshooting
 
