@@ -8,6 +8,23 @@ Before start:
 
 2) you may want to change the directory path. If yes, adjust the instructions accordingly.
 
+
+### dependency:
+
+install ros: follow the steps described in http://wiki.ros.org/ROS/Installation
+
+install catkin_tools: follow the steps described in https://catkin-tools.readthedocs.io/en/latest/installing.html
+
+install wstool: follow the steps described in http://wiki.ros.org/wstool
+
+install and configure rosdep: follow the steps described in http://wiki.ros.org/rosdep
+
+
+instal git and other depedencies
+```
+sudo apt install git  build-essential libqt5charts5-dev
+```
+
 ### workspace 1: third-parties repository
 ```
 mkdir -p ~/projects/third_parties_ws/src
