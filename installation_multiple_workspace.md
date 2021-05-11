@@ -50,8 +50,8 @@ wstool merge -t src ./rosinstall/controllers.rosinstall
 
 wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
-catkin config -j $(nproc --ignore=2)
-catkin build -cs --mem-limit 50%
+catkin config -j 2
+catkin build -cs --mem-limit 30%
 ```
 
 Now, add the repository to path:
