@@ -1,3 +1,4 @@
+sudo apt install git  build-essential libqt5charts5-dev
 sudo apt install libbson-dev  libmongoc-dev
 mkdir -p ~/projects/mongo_src
 cd ~/projects/mongo_src
