@@ -1,23 +1,12 @@
-
 - git:
-    local-name: devices/robotiq_ur_modbus
-    uri: https://github.com/JRL-CARI-CNR-UNIBS/robotiq_ur_modbus.git
-- git:
-    local-name: devices/robots/ur/universal_robot_hardware_interface
-    uri: https://bitbucket.org/iras-ind/universal_robot_hardware_interface.git
-- git:
-    local-name: devices/robots/ur/ur10e_robotiq_simplified
-    uri: https://github.com/JRL-CARI-CNR-UNIBS/ur10e_robotiq_simplified
-- git:
-    local-name: devices/robots/ur/ur_cb3_hw
-    uri: https://CNR-ITIA@bitbucket.org/iras-ind/ur_cb3_hw.git
-- git:
-    local-name: devices/robots/ur/ur_simplified
-    uri: https://github.com/JRL-CARI-CNR-UNIBS/ur_simplified
-
-
-
-- git:
-    local-name: perception/pcl_perception
+    local-name: pcl_perception
     uri: https://bitbucket.org/CNR-ITIA/pcl_perception
-    version: devel
+- git:
+    local-name: magut_calib
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/magut_calibration.git
+- git:
+    local-name: ros_myo
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/ros_myo.git
+- git:
+    local-name: ros_myo
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/human_simulator.git
