@@ -126,3 +126,26 @@ Now, add the repository to path:
 echo "source /home/$USER/projects/sharework_ws/devel/setup.bash" >> ~/.bashrc
 ```
 To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
+
+
+### workspace [optional]: CNR-STIIMA cell and simulated cells
+you may need username and password for some repository.
+```
+mkdir -p ~/projects/cells_ws/src
+cd ~/projects/cells_ws
+catkin init
+wstool init src
+mkdir rosinstall
+wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/cells.rosinstall -P ./rosinstall
+wstool merge -t src ./rosinstall/cells.rosinstall
+wstool update -t src
+rosdep install --from-paths src --ignore-src -r -y
+catkin config -j $(nproc --ignore=2)
+catkin build -cs --mem-limit 50%
+```
+
+Now, add the repository to path:
+```
+echo "source /home/$USER/projects/cells_ws/devel/setup.bash" >> ~/.bashrc
+```
+To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.

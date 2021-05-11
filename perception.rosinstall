@@ -8,5 +8,5 @@
     local-name: ros_myo
     uri: https://github.com/JRL-CARI-CNR-UNIBS/ros_myo.git
 - git:
-    local-name: ros_myo
+    local-name: human_simulator
     uri: https://github.com/JRL-CARI-CNR-UNIBS/human_simulator.git

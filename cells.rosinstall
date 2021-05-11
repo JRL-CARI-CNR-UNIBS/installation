@@ -1,0 +1,6 @@
+- git:
+    local-name: cella1
+    uri: https://github.com/CNR-STIIMA-IRAS/cella1_ros.git
+- git:
+    local-name: devices/high_dof_robots
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/high_dof_snake_robots.git
