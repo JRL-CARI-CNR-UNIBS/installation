@@ -1,6 +1,6 @@
 # Installation on multiple (overlayed) workspaces
 _see [here](https://catkin-tools.readthedocs.io/en/latest/mechanics.html#workspace-chaining-extending)_
- for details
+ for details on the usage of multiple workspaces.
 
 Before start:
 
@@ -20,7 +20,7 @@ wstool merge -t src rosinstall/third_parties.rosinstall
 wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
 catkin config -j $(nproc --ignore=2)
-catkin build -cs
+catkin build -cs --mem-limit 50%
 ```
 
 The package _robotiq_3f_gripper_articulated_gazebo_plugins_ could fail during compilation, but it is not needed.
@@ -68,12 +68,8 @@ cd ~/projects/planning_ws
 catkin init
 wstool init src
 mkdir rosinstall
-wget https://raw.githubusercontent.com/CNR-STIIMA-IRAS/rosdyn/master/rosdyn.rosinstall -P ./rosinstall
-wstool merge -t src ./rosinstall/rosdyn.rosinstall
-
 wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/motion_and_task_planning.rosinstall -P ./rosinstall
 wstool merge -t src ./rosinstall/motion_and_task_planning.rosinstall
-
 wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
 catkin config -j $(nproc --ignore=2)

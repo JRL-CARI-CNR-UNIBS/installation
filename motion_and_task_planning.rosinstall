@@ -14,9 +14,9 @@
 - git:
     local-name: motion/online_replanner
     uri: https://github.com/JRL-CARI-CNR-UNIBS/online_replanner
-#- git:
-#    local-name: task-planner-interface
-#    uri: https://bitbucket.org/CNR-ITIA/task-planner-interface
+- git:
+    local-name: task-planner-interface
+    uri: https://bitbucket.org/CNR-ITIA/task-planner-interface
 - git:
     local-name: safety/ssm_safety
     uri: https://github.com/CNR-STIIMA-IRAS/ssm_safety.git
