@@ -65,6 +65,7 @@ wstool init src
 mkdir rosinstall
 wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/third_parties.rosinstall -P ./rosinstall
 wstool merge -t src rosinstall/third_parties.rosinstall
+wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
 catkin build -cs
 ```
@@ -82,15 +83,21 @@ source /home/[YOUR_USERNAME]/projects/third_parties_ws/devel/setup.bash
 To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
 
 
-### workspace 2: common repository
+### workspace 2: control repository
 ```
-mkdir -p ~/projects/common_ws/src
-cd ~/projects/common_ws
+mkdir -p ~/projects/control/src
+cd ~/projects/control
 catkin init
 wstool init src
 mkdir rosinstall
-wget https://raw.githubusercontent.com/CNR-STIIMA-IRAS/rosdyn/master/rosdyn.rosinstall
-wstool merge -t src ./rosdyn.rosinstall
+wget https://raw.githubusercontent.com/CNR-STIIMA-IRAS/rosdyn/master/rosdyn.rosinstall -P ./rosinstall
+wstool merge -t src ./rosinstall/rosdyn.rosinstall
+
+wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/cnr_ros_control.rosinstall -P ./rosinstall
+wstool merge -t src ./rosinstall/cnr_ros_control.rosinstall
+
+
+wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
 catkin build -cs
 ```
