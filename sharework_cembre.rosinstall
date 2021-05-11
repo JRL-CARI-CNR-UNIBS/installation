@@ -1,0 +1,9 @@
+- git:
+    local-name: devices/robots/ur/ur10e_robotiq_simplified
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/ur10e_robotiq_simplified
+- git:
+    local-name: devices/robots/ur/ur_simplified
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/ur_simplified
+- git:
+    local-name: devices/robotiq_ur_modbus
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/robotiq_ur_modbus.git

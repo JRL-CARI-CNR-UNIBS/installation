@@ -81,3 +81,48 @@ Now, add the repository to path:
 echo "source /home/$USER/projects/planning_ws/devel/setup.bash" >> ~/.bashrc
 ```
 To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
+
+### workspace 4: perception repository
+```
+mkdir -p ~/projects/perception_ws/src
+cd ~/projects/perception_ws
+catkin init
+wstool init src
+mkdir rosinstall
+wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/perception.rosinstall -P ./rosinstall
+wstool merge -t src ./rosinstall/perception.rosinstall
+wstool update -t src
+rosdep install --from-paths src --ignore-src -r -y
+catkin config -j $(nproc --ignore=2)
+catkin build -cs --mem-limit 50%
+```
+
+Now, add the repository to path:
+```
+echo "source /home/$USER/projects/perception_ws/devel/setup.bash" >> ~/.bashrc
+```
+To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
+
+
+
+### workspace [optional]: Sharework cembre cell
+you may need username and password for some repository.
+```
+mkdir -p ~/projects/sharework_ws/src
+cd ~/projects/sharework_ws
+catkin init
+wstool init src
+mkdir rosinstall
+wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/sharework_cembre.rosinstall -P ./rosinstall
+wstool merge -t src ./rosinstall/sharework_cembre.rosinstall
+wstool update -t src
+rosdep install --from-paths src --ignore-src -r -y
+catkin config -j $(nproc --ignore=2)
+catkin build -cs --mem-limit 50%
+```
+
+Now, add the repository to path:
+```
+echo "source /home/$USER/projects/sharework_ws/devel/setup.bash" >> ~/.bashrc
+```
+To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
