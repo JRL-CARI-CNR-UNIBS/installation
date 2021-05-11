@@ -45,6 +45,23 @@ wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
 catkin build -cs
 ```
+
+## Installation on multiple (overlayed workspaces)
+_see [here](https://catkin-tools.readthedocs.io/en/latest/mechanics.html#workspace-chaining-extending)_
+ for details
+
+Before start:
+
+1) be sure that the .bashrc DOES NOT call a setup.bash of an existing workspace
+
+2) you may want to change the directory path. If yes, adjust the instructions accordingly.
+
+### workspace 1: third-parties repository
+mkdir -p ~/projects/third_parties_ws/src
+cd ~/projects/third_parties_ws
+catkin init
+
+
 ## troubleshooting
 
 cannot connect with the UR10e robot:
