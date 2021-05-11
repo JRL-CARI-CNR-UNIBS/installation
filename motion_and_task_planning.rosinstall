@@ -26,3 +26,6 @@
 - git:
     local-name: safety/ssm_safety
     uri: https://github.com/CNR-STIIMA-IRAS/ssm_safety.git
+- git:
+    local-name: perception/object_loader
+    uri: https://bitbucket.org/iras-ind/object_loader.git
