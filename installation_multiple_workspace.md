@@ -182,6 +182,7 @@ echo "source /home/$USER/projects/cells_ws/devel/setup.bash" >> ~/.bashrc
 ```
 
 
+### Automatic installation
 
 All the installation can be done by using [this script](automated_script.bash)
 ```
