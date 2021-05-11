@@ -62,6 +62,21 @@ To make the change effective, open and close the terminals or run _source ~/.bas
 
 
 ### workspace 3: motion and task planning repository
+
+Before the installation you need to install mongo:
+```
+sudo apt install libbson-dev  libmongoc-dev
+mkdir -p ~/projects/mongo_src
+cd ~/projects/mongo_src
+curl -OL https://github.com/mongodb/mongo-cxx-driver/archive/r3.1.4.tar.gz
+tar -xvf r3.1.4.tar.gz
+cd mongo-cxx-driver-r3.1.4/build
+cmake . .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local
+sudo cmake --build . --target EP_mnmlstc_core
+cmake --build .
+sudo cmake --build . --target install
+```
+then you can run:
 ```
 mkdir -p ~/projects/planning_ws/src
 cd ~/projects/planning_ws

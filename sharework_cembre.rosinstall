@@ -1,9 +1,9 @@
 - git:
-    local-name: cari_jrl/sharework_assembly
-    uri: https://CNR-ITIA@bitbucket.org/iras-ind/sharework_assembly.git
+    local-name: sharework_assembly
+    uri: https://bitbucket.org/iras-ind/sharework_assembly.git
 - git:
-    local-name: cari_jrl/sharework_cell
-    uri: https://bitbucket.org/iras-ind/sharework_cell
+    local-name: sharework_cell
+    uri: https://bitbucket.org/iras-ind/sharework_cell.git
 - git:
-    local-name: cari_jrl/sharework_cell
+    local-name: sharework_cell
     uri: https://bitbucket.org/CNR-ITIA/sharework_task_planning.git
