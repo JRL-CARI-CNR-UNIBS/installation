@@ -148,4 +148,12 @@ Now, add the repository to path:
 ```
 echo "source /home/$USER/projects/cells_ws/devel/setup.bash" >> ~/.bashrc
 ```
+
+
+
+All the installation can be done by using [this script](automated_script.bash)
+```
+wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/automated_script.bash
+source automated_script.bash
+```
 To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
