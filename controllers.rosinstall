@@ -13,3 +13,6 @@
 - git:
     local-name: motion_controllers/cnr_motion_control
     uri: https://github.com/CNR-STIIMA-IRAS/cnr_motion_control
+- git:
+    local-name: motion_controllers/scaled_fjt_controller
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/scaled_follow_joint_trajectory_controller.git
