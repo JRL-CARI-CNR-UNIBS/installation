@@ -8,16 +8,6 @@ Before start:
 
 
 
-### Automatic installation
-
-All the installation can be done by using [this script](automated_script_single_workspace.bash)
-```
-wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/automated_script_single_workspace.bash
-source automated_script.bash
-```
-To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
-
-## Manual installation
 
 ### dependency:
 
@@ -34,6 +24,17 @@ instal git and other depedencies
 ```
 sudo apt install git  build-essential libqt5charts5-dev
 ```
+
+### Automatic installation
+
+All the installation can be done by using [this script](automated_script_single_workspace.bash)
+```
+wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/automated_script_single_workspace.bash
+source automated_script.bash
+```
+To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
+
+## Manual installation
 
 ### create workspace
 ```
