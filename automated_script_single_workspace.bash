@@ -10,8 +10,8 @@ sudo cmake --build . --target EP_mnmlstc_core
 cmake --build .
 sudo cmake --build . --target install
 
-mkdir -p ~/projects/third_parties_ws/src
-cd ~/projects/third_parties_ws
+mkdir -p ~/projects/ros_ws/src
+cd ~/projects/ros_ws
 catkin init
 wstool init src
 mkdir rosinstall
@@ -23,14 +23,9 @@ catkin config -j $(nproc --ignore=2)
 catkin build -cs --mem-limit 50%
 
 source devel/setup.bash
-echo "source /home/$USER/projects/third_parties/devel/setup.bash" >> ~/.bashrc
+echo "source /home/$USER/projects/ros_ws/devel/setup.bash" >> ~/.bashrc
 
 
-mkdir -p ~/projects/control_ws/src
-cd ~/projects/control_ws
-catkin init
-wstool init src
-mkdir rosinstall
 wget https://raw.githubusercontent.com/CNR-STIIMA-IRAS/rosdyn/master/rosdyn.rosinstall -P ./rosinstall
 wstool merge -t src ./rosinstall/rosdyn.rosinstall
 
@@ -45,16 +40,6 @@ rosdep install --from-paths src --ignore-src -r -y
 catkin config -j 2
 catkin build -cs --mem-limit 30%
 
-
-source devel/setup.bash
-echo "source /home/$USER/projects/control_ws/devel/setup.bash" >> ~/.bashrc
-
-
-mkdir -p ~/projects/planning_ws/src
-cd ~/projects/planning_ws
-catkin init
-wstool init src
-mkdir rosinstall
 wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/motion_and_task_planning.rosinstall -P ./rosinstall
 wstool merge -t src ./rosinstall/motion_and_task_planning.rosinstall
 wstool update -t src
@@ -63,15 +48,6 @@ catkin config -j $(nproc --ignore=2)
 catkin build -cs --mem-limit 50%
 
 
-source devel/setup.bash
-echo "source /home/$USER/projects/planning_ws/devel/setup.bash" >> ~/.bashrc
-
-
-mkdir -p ~/projects/perception_ws/src
-cd ~/projects/perception_ws
-catkin init
-wstool init src
-mkdir rosinstall
 wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/perception.rosinstall -P ./rosinstall
 wstool merge -t src ./rosinstall/perception.rosinstall
 wstool update -t src
@@ -79,17 +55,6 @@ rosdep install --from-paths src --ignore-src -r -y
 catkin config -j $(nproc --ignore=2)
 catkin build -cs --mem-limit 50%
 
-
-source devel/setup.bash
-echo "source /home/$USER/projects/perception_ws/devel/setup.bash" >> ~/.bashrc
-
-
-
-mkdir -p ~/projects/sharework_ws/src
-cd ~/projects/sharework_ws
-catkin init
-wstool init src
-mkdir rosinstall
 wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/sharework_cembre.rosinstall -P ./rosinstall
 wstool merge -t src ./rosinstall/sharework_cembre.rosinstall
 wstool update -t src
@@ -97,24 +62,11 @@ rosdep install --from-paths src --ignore-src -r -y
 catkin config -j $(nproc --ignore=2)
 catkin build -cs --mem-limit 50%
 
-source devel/setup.bash
-echo "source /home/$USER/projects/sharework_ws/devel/setup.bash" >> ~/.bashrc
-
-
-mkdir -p ~/projects/cells_ws/src
-cd ~/projects/cells_ws
-catkin init
-wstool init src
-mkdir rosinstall
 wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/cells.rosinstall -P ./rosinstall
 wstool merge -t src ./rosinstall/cells.rosinstall
 wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
 catkin config -j $(nproc --ignore=2)
 catkin build -cs --mem-limit 50%
-
-source devel/setup.bash
-echo "source /home/$USER/projects/cells_ws/devel/setup.bash" >> ~/.bashrc
-
 
 source ~/.bashrc

@@ -1,6 +1,4 @@
-# Installation on multiple (overlayed) workspaces
-_see [here](https://catkin-tools.readthedocs.io/en/latest/mechanics.html#workspace-chaining-extending)_
- for details on the usage of multiple workspaces.
+# Installation on a single workspace
 
 Before start:
 
@@ -10,11 +8,11 @@ Before start:
 
 
 
-## Automatic installation
+### Automatic installation
 
-All the installation can be done by using [this script](automated_script.bash)
+All the installation can be done by using [this script](automated_script_single_workspace.bash)
 ```
-wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/automated_script.bash
+wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/automated_script_single_workspace.bash
 source automated_script.bash
 ```
 To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
@@ -37,13 +35,24 @@ instal git and other depedencies
 sudo apt install git  build-essential libqt5charts5-dev
 ```
 
-### workspace 1: third-parties repository
+### create workspace
 ```
-mkdir -p ~/projects/third_parties_ws/src
+mkdir -p ~/projects/ros_ws/src
 cd ~/projects/third_parties_ws
 catkin init
-wstool init src
 mkdir rosinstall
+wstool init src
+```
+
+Now, add the repository to path:
+```
+echo "source /home/$USER/projects/ros_ws/devel/setup.bash" >> ~/.bashrc
+```
+To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
+
+
+### Third parties repositories
+```
 wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/third_parties.rosinstall -P ./rosinstall
 wstool merge -t src rosinstall/third_parties.rosinstall
 wstool update -t src
@@ -54,20 +63,9 @@ catkin build -cs --mem-limit 50%
 
 The package _robotiq_3f_gripper_articulated_gazebo_plugins_ could fail during compilation, but it is not needed.
 
-Now, add the repository to path:
-```
-echo "source /home/$USER/projects/third_parties/devel/setup.bash" >> ~/.bashrc
-```
-To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
 
-
-### workspace 2: control repository
+### control repositories
 ```
-mkdir -p ~/projects/control_ws/src
-cd ~/projects/control_ws
-catkin init
-wstool init src
-mkdir rosinstall
 wget https://raw.githubusercontent.com/CNR-STIIMA-IRAS/rosdyn/master/rosdyn.rosinstall -P ./rosinstall
 wstool merge -t src ./rosinstall/rosdyn.rosinstall
 
@@ -83,14 +81,7 @@ catkin config -j 2
 catkin build -cs --mem-limit 30%
 ```
 
-Now, add the repository to path:
-```
-echo "source /home/$USER/projects/control_ws/devel/setup.bash" >> ~/.bashrc
-```
-To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
-
-
-### workspace 3: motion and task planning repository
+### motion and task planning repositories
 
 Before the installation you need to install mongo:
 ```
@@ -107,11 +98,6 @@ sudo cmake --build . --target install
 ```
 then you can run:
 ```
-mkdir -p ~/projects/planning_ws/src
-cd ~/projects/planning_ws
-catkin init
-wstool init src
-mkdir rosinstall
 wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/motion_and_task_planning.rosinstall -P ./rosinstall
 wstool merge -t src ./rosinstall/motion_and_task_planning.rosinstall
 wstool update -t src
@@ -120,19 +106,8 @@ catkin config -j $(nproc --ignore=2)
 catkin build -cs --mem-limit 50%
 ```
 
-Now, add the repository to path:
+### perception repositories
 ```
-echo "source /home/$USER/projects/planning_ws/devel/setup.bash" >> ~/.bashrc
-```
-To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
-
-### workspace 4: perception repository
-```
-mkdir -p ~/projects/perception_ws/src
-cd ~/projects/perception_ws
-catkin init
-wstool init src
-mkdir rosinstall
 wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/perception.rosinstall -P ./rosinstall
 wstool merge -t src ./rosinstall/perception.rosinstall
 wstool update -t src
@@ -141,22 +116,9 @@ catkin config -j $(nproc --ignore=2)
 catkin build -cs --mem-limit 50%
 ```
 
-Now, add the repository to path:
-```
-echo "source /home/$USER/projects/perception_ws/devel/setup.bash" >> ~/.bashrc
-```
-To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
-
-
-
-### workspace [optional]: Sharework cembre cell
+### [optional]: Sharework cembre cell
 you may need username and password for some repository.
 ```
-mkdir -p ~/projects/sharework_ws/src
-cd ~/projects/sharework_ws
-catkin init
-wstool init src
-mkdir rosinstall
 wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/sharework_cembre.rosinstall -P ./rosinstall
 wstool merge -t src ./rosinstall/sharework_cembre.rosinstall
 wstool update -t src
@@ -165,21 +127,9 @@ catkin config -j $(nproc --ignore=2)
 catkin build -cs --mem-limit 50%
 ```
 
-Now, add the repository to path:
-```
-echo "source /home/$USER/projects/sharework_ws/devel/setup.bash" >> ~/.bashrc
-```
-To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
-
-
-### workspace [optional]: CNR-STIIMA cell and simulated cells
+### [optional]: CNR-STIIMA cell and simulated cells
 you may need username and password for some repository.
 ```
-mkdir -p ~/projects/cells_ws/src
-cd ~/projects/cells_ws
-catkin init
-wstool init src
-mkdir rosinstall
 wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/cells.rosinstall -P ./rosinstall
 wstool merge -t src ./rosinstall/cells.rosinstall
 wstool update -t src
@@ -188,8 +138,4 @@ catkin config -j $(nproc --ignore=2)
 catkin build -cs --mem-limit 50%
 ```
 
-Now, add the repository to path:
-```
-echo "source /home/$USER/projects/cells_ws/devel/setup.bash" >> ~/.bashrc
-```
 

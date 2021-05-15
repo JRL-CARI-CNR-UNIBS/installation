@@ -1,43 +1,17 @@
 # installation
 
-install ros: follow the steps described in http://wiki.ros.org/ROS/Installation
+Installation of the JRL-CARI Workspace can be done in a single workspace or a multiple workspaces.
+The second saves you times during compilation.
 
-install catkin_tools: follow the steps described in https://catkin-tools.readthedocs.io/en/latest/installing.html
+## Installation on a single workspace
+_see [here](installation_single_workspace.md)_
 
-install wstool: follow the steps described in http://wiki.ros.org/wstool
-
-install and configure rosdep: follow the steps described in http://wiki.ros.org/rosdep
-
-
-instal git and other depedencies
-```
-sudo apt install git
-sudo apt install libqt5charts5-dev
-```
-
-create a workspace (examples: /home/user/catkin_ws /home/user/projects/ros_ws)
-configure workspace
-
-
-```
-mkdir -p ~/projects/ros_ws/src
-cd ~/projects/ros_ws
-catkin build
-git clone https://github.com/JRL-CARI-CNR-UNIBS/installation
-wstool init src
-```
-
-install by using rosinstall (in installation folder there are many rosinstall files, choose the desired ones)
-
-```
-wstool merge -t src installation/base_cari.rosinstall
-wstool update -t src
-rosdep install --from-paths src --ignore-src -r -y
-catkin build -cs
-```
 
 ## Installation on multiple (overlayed) workspaces
 _see [here](installation_multiple_workspace.md)_
+
+# Configure KDevelop
+TDB
 
 ## troubleshooting
 
