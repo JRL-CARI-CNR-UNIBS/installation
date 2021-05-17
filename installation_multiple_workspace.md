@@ -32,7 +32,7 @@ sudo apt install git  build-essential libqt5charts5-dev
 
 All the installation can be done by using [this script](automated_script.bash)
 ```
-wget -O https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/automated_script.bash
+wget  --backups=1 https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/automated_script.bash
 source automated_script.bash
 ```
 To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
@@ -46,7 +46,7 @@ cd ~/projects/third_parties_ws
 catkin init
 wstool init src
 mkdir rosinstall
-wget -O https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/third_parties.rosinstall -P ./rosinstall
+wget  --backups=1 https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/third_parties.rosinstall -P ./rosinstall
 wstool merge -t src rosinstall/third_parties.rosinstall
 wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
@@ -70,13 +70,13 @@ cd ~/projects/control_ws
 catkin init
 wstool init src
 mkdir rosinstall
-wget -O https://raw.githubusercontent.com/CNR-STIIMA-IRAS/rosdyn/master/rosdyn.rosinstall -P ./rosinstall
+wget  --backups=1 https://raw.githubusercontent.com/CNR-STIIMA-IRAS/rosdyn/master/rosdyn.rosinstall -P ./rosinstall
 wstool merge -t src ./rosinstall/rosdyn.rosinstall
 
-wget -O https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/cnr_ros_control.rosinstall -P ./rosinstall
+wget  --backups=1 https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/cnr_ros_control.rosinstall -P ./rosinstall
 wstool merge -t src ./rosinstall/cnr_ros_control.rosinstall
 
-wget -O https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/controllers.rosinstall -P ./rosinstall
+wget  --backups=1 https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/controllers.rosinstall -P ./rosinstall
 wstool merge -t src ./rosinstall/controllers.rosinstall
 
 wstool update -t src
@@ -114,7 +114,7 @@ cd ~/projects/planning_ws
 catkin init
 wstool init src
 mkdir rosinstall
-wget -O https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/motion_and_task_planning.rosinstall -P ./rosinstall
+wget  --backups=1 https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/motion_and_task_planning.rosinstall -P ./rosinstall
 wstool merge -t src ./rosinstall/motion_and_task_planning.rosinstall
 wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
@@ -135,7 +135,7 @@ cd ~/projects/perception_ws
 catkin init
 wstool init src
 mkdir rosinstall
-wget -O https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/perception.rosinstall -P ./rosinstall
+wget  --backups=1 https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/perception.rosinstall -P ./rosinstall
 wstool merge -t src ./rosinstall/perception.rosinstall
 wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
@@ -159,7 +159,7 @@ cd ~/projects/sharework_ws
 catkin init
 wstool init src
 mkdir rosinstall
-wget -O https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/sharework_cembre.rosinstall -P ./rosinstall
+wget  --backups=1 https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/sharework_cembre.rosinstall -P ./rosinstall
 wstool merge -t src ./rosinstall/sharework_cembre.rosinstall
 wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
@@ -182,7 +182,7 @@ cd ~/projects/cells_ws
 catkin init
 wstool init src
 mkdir rosinstall
-wget -O https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/cells.rosinstall -P ./rosinstall
+wget  --backups=1 https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/cells.rosinstall -P ./rosinstall
 wstool merge -t src ./rosinstall/cells.rosinstall
 wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
