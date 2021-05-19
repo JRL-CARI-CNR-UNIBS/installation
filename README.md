@@ -11,7 +11,10 @@ _see [here](installation_single_workspace.md)_
 _see [here](installation_multiple_workspace.md)_
 
 # Configure KDevelop
-TDB
+_see [here](qtcreator.md)_
+
+# Configure Atom
+_see [here](atom.md)_
 
 ## troubleshooting
 
