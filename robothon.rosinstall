@@ -1,0 +1,6 @@
+- git:
+    local-name: robothon_configurations
+    uri: https://CNR-ITIA@bitbucket.org/CNR-ITIA/robothon_configurations.git
+- git:
+    local-name: robothon_state_machine
+    uri: https://CNR-ITIA@bitbucket.org/CNR-ITIA/robothon_state_machine.git
