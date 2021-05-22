@@ -206,7 +206,7 @@ catkin init
 wstool init src
 mkdir rosinstall
 wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/robothon.rosinstall -P ./rosinstall
-wstool merge -t src ./rosinstall/robothlon.rosinstall
+wstool merge -t src ./rosinstall/robothon.rosinstall
 wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
 catkin config -j $(nproc --ignore=2)
