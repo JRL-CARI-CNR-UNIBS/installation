@@ -200,7 +200,7 @@ echo "source /home/$USER/projects/cells_ws/devel/setup.bash" >> ~/.bashrc
 ### workspace [optional]: robothon
 you may need username and password for some repository.
 ```
-mkdir -p ~/projects/robothlon_ws/src
+mkdir -p ~/projects/robothon_ws/src
 cd ~/projects/robothlon_ws
 catkin init
 wstool init src
@@ -215,5 +215,5 @@ catkin build -cs --mem-limit 50%
 
 Now, add the repository to path:
 ```
-echo "source /home/$USER/projects/robothlon_ws/devel/setup.bash" >> ~/.bashrc
+echo "source /home/$USER/projects/robothon_ws/devel/setup.bash" >> ~/.bashrc
 ```
