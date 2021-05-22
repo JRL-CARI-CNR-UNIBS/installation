@@ -201,7 +201,7 @@ echo "source /home/$USER/projects/cells_ws/devel/setup.bash" >> ~/.bashrc
 you may need username and password for some repository.
 ```
 mkdir -p ~/projects/robothon_ws/src
-cd ~/projects/robothlon_ws
+cd ~/projects/robothon_ws
 catkin init
 wstool init src
 mkdir rosinstall
