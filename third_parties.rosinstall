@@ -12,4 +12,6 @@
     local-name: projects/panda_moveit_config
     uri: https://github.com/ros-planning/panda_moveit_config.git
     version: melodic-devel
-
+- git:
+    local-name: devices/robots/ur/ur_msgs
+    uri: https://github.com/ros-industrial/ur_msgs

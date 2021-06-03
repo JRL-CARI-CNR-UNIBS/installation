@@ -10,7 +10,10 @@ edit -> preferences
 
 install:
 
-language-ansi-styles
-language-cmake
-language-msg
-atom-ros
+- language-ansi-styles
+
+- language-cmake
+
+- language-msg
+
+- atom-ros

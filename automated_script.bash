@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+
 
 sudo apt install git  build-essential libqt5charts5-dev
 sudo apt install libbson-dev  libmongoc-dev
