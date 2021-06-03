@@ -28,7 +28,7 @@ instal git and other depedencies
 sudo apt install git  build-essential libqt5charts5-dev
 ```
 
-## Automatic installation
+## Automatic installation  (STILL WORKING IN PROGRESS)
 
 All the installation can be done by using [this script](automated_script.bash)
 ```
@@ -195,3 +195,25 @@ Now, add the repository to path:
 echo "source /home/$USER/projects/cells_ws/devel/setup.bash" >> ~/.bashrc
 ```
 
+
+
+### workspace [optional]: robothon
+you may need username and password for some repository.
+```
+mkdir -p ~/projects/robothon_ws/src
+cd ~/projects/robothon_ws
+catkin init
+wstool init src
+mkdir rosinstall
+wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/robothon.rosinstall -P ./rosinstall
+wstool merge -t src ./rosinstall/robothon.rosinstall
+wstool update -t src
+rosdep install --from-paths src --ignore-src -r -y
+catkin config -j $(nproc --ignore=2)
+catkin build -cs --mem-limit 50%
+```
+
+Now, add the repository to path:
+```
+echo "source /home/$USER/projects/robothon_ws/devel/setup.bash" >> ~/.bashrc
+```

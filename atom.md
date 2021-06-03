@@ -1,8 +1,5 @@
 # configure atom
-
-```yaml
-sudo apt install atom
-```
+see [here](https://flight-manual.atom.io/getting-started/sections/installing-atom/) for install atom
 
 ## install add-ons
 

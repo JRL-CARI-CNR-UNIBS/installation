@@ -25,7 +25,7 @@ instal git and other depedencies
 sudo apt install git  build-essential libqt5charts5-dev
 ```
 
-### Automatic installation
+### Automatic installation  (STILL WORKING IN PROGRESS)
 
 All the installation can be done by using [this script](automated_script_single_workspace.bash)
 ```
@@ -60,6 +60,7 @@ wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
 catkin config -j $(nproc --ignore=2)
 catkin build -cs --mem-limit 50%
+source devel/setup.bash
 ```
 
 The package _robotiq_3f_gripper_articulated_gazebo_plugins_ could fail during compilation, but it is not needed.
@@ -80,6 +81,7 @@ wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
 catkin config -j 2
 catkin build -cs --mem-limit 30%
+source devel/setup.bash
 ```
 
 ### motion and task planning repositories
@@ -105,6 +107,7 @@ wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
 catkin config -j $(nproc --ignore=2)
 catkin build -cs --mem-limit 50%
+source devel/setup.bash
 ```
 
 ### perception repositories
@@ -115,6 +118,7 @@ wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
 catkin config -j $(nproc --ignore=2)
 catkin build -cs --mem-limit 50%
+source devel/setup.bash
 ```
 
 ### [optional]: Sharework cembre cell
@@ -126,6 +130,7 @@ wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
 catkin config -j $(nproc --ignore=2)
 catkin build -cs --mem-limit 50%
+source devel/setup.bash
 ```
 
 ### [optional]: CNR-STIIMA cell and simulated cells
@@ -137,6 +142,18 @@ wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
 catkin config -j $(nproc --ignore=2)
 catkin build -cs --mem-limit 50%
+source devel/setup.bash
 ```
 
 
+### workspace [optional]: robothon
+you may need username and password for some repository.
+```
+wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/robothlon.rosinstall -P ./rosinstall
+wstool merge -t src ./rosinstall/robothlon.rosinstall
+wstool update -t src
+rosdep install --from-paths src --ignore-src -r -y
+catkin config -j $(nproc --ignore=2)
+catkin build -cs --mem-limit 50%
+source devel/setup.bash
+```
