@@ -2,7 +2,15 @@
 _see [here](https://catkin-tools.readthedocs.io/en/latest/mechanics.html#workspace-chaining-extending)_
  for details on the usage of multiple workspaces.
 
-Before start:
+ # Table of Contents
+ 1. [Before start](#Before-start)
+ 2. [dependency](#dependency)
+ 3. [Automatic installation  ](#automatic-installation)
+ 4. [Manual installation](#manual-installation)
+ 5. [Utilities](#Utilities)
+
+
+## Before start
 
 1) be sure that the .bashrc DOES NOT call a setup.bash of an existing workspace
 
@@ -12,7 +20,7 @@ Before start:
 
 
 
-### dependency:
+## dependency
 
 install ros: follow the steps described in http://wiki.ros.org/ROS/Installation
 
@@ -28,7 +36,8 @@ instal git and other depedencies
 sudo apt install git  build-essential libqt5charts5-dev
 ```
 
-## Automatic installation  (STILL WORKING IN PROGRESS)
+## Automatic installation  
+(STILL WORKING IN PROGRESS)
 
 All the installation can be done by using [this script](automated_script.bash)
 ```
@@ -216,4 +225,21 @@ catkin build -cs --mem-limit 50%
 Now, add the repository to path:
 ```
 echo "source /home/$USER/projects/robothon_ws/devel/setup.bash" >> ~/.bashrc
+```
+
+
+## Utilities
+you may want to use some shortcut to:
+-  (re)load the environment variables
+
+- check the status of the workspaces (what packages have been modified)
+
+- update all the repositories
+
+Let's suppose that you download [this repository](https://github.com/JRL-CARI-CNR-UNIBS/installation) in ~/projects/installation, then you should add the following lines to the file ~/.bashrc
+
+```
+alias rr='source ~/projects/installation/source_all_ws.bash'
+alias status_ws='source ~/projects/installation/status_of_ws.bash'
+alias update_ws='soruce  ~/projects/installation/update_all_ws.bash'
 ```
