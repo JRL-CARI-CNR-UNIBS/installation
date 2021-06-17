@@ -21,6 +21,8 @@ where **[WORKSPACE]** is the workspace name of the package you want to open.
 
 - open the CMakeLists.txt file of the package
 
+- in Configure project window, unselect "Desktop"
+
 - in Configure project window scroll down to find "Import build from build"
 ![alt text](images/configure_build01.png)
 ![alt text](images/configure_build02.png)
