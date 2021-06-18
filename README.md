@@ -44,44 +44,74 @@ nano ~/.gdbinit
 set print thread-events off
 ```
 ### Git useful commands
-
+* clone an online repository
+```
+git clone URL
+```
 * see repository status
 ```
 git status
 ```
-* to push your file on online repository, follow these steps:
-** stage the modified files:
+* to push your file to the online repository, follow these steps:
+  * stage the modified files:
 ```
 git add -A
 ```
-** create a commit:
+  * create a commit:
 ```
 git commit -m "write your comment here"
 ```
-** push your work on online repository:
+  * push your work to the online repository:
 ```
 git push
+```
+* download the changes of your branch present online but not present locally:
+```
+git pull
+```
+* update the information from the online repo without downloading it (useful to see if there are any differences before doing a pull)
+```
+git fetch
 ```
 * see the local and remote branches
 ```
 git branch --all
 ```
-* remove a file
+* change your branch
 ```
-git rm file_name
+git checkout branch_name
 ```
 * see commits list
 ```
 git log
 ```
-with branches evolution:
+with branches graph:
 ```
 git log --all --decorate --graph
 ```
-* unstage files one at a time
+* see staged files and choose if unstage them one at a time
 ```
 git checkout -p
 ```
+* merge branch "A_branch" to branch "B_branch":
+```
+git merge B_branch A_branch
+```
+* create a GitHub repository from scratch:
+  * create the repo on GitHub and copy the URL
+  * create the repo on your pc with the same name
+  * go inside the repo using the terminal and type
+  ```
+  git init
+  ```
+  * associate the local repository with the online one:
+  ```
+  git remote add origin URL
+  ```
+  * create your files, commit them and then push to the master:
+  ```
+  git push -origin master
+  ```
 
 ### Git difftool
 
