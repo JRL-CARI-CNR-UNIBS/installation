@@ -68,8 +68,8 @@ The package _robotiq_3f_gripper_articulated_gazebo_plugins_ could fail during co
 Now, add the repository to path:
 ```
 echo "source /home/$USER/projects/third_parties_ws/devel/setup.bash" >> ~/.bashrc
+source ~/.bashrc
 ```
-To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
 
 
 ### workspace 2: control repository
@@ -97,8 +97,8 @@ catkin build -cs --mem-limit 30%
 Now, add the repository to path:
 ```
 echo "source /home/$USER/projects/control_ws/devel/setup.bash" >> ~/.bashrc
+source ~/.bashrc
 ```
-To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
 
 
 ### workspace 3: motion and task planning repository
@@ -134,8 +134,8 @@ catkin build -cs --mem-limit 50%
 Now, add the repository to path:
 ```
 echo "source /home/$USER/projects/planning_ws/devel/setup.bash" >> ~/.bashrc
+source ~/.bashrc
 ```
-To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
 
 ### workspace 4: perception repository
 ```
@@ -155,8 +155,8 @@ catkin build -cs --mem-limit 50%
 Now, add the repository to path:
 ```
 echo "source /home/$USER/projects/perception_ws/devel/setup.bash" >> ~/.bashrc
+source ~/.bashrc
 ```
-To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
 
 
 
@@ -179,8 +179,8 @@ catkin build -cs --mem-limit 50%
 Now, add the repository to path:
 ```
 echo "source /home/$USER/projects/sharework_ws/devel/setup.bash" >> ~/.bashrc
+source ~/.bashrc
 ```
-To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
 
 
 ### workspace [optional]: CNR-STIIMA cell and simulated cells
@@ -202,6 +202,7 @@ catkin build -cs --mem-limit 50%
 Now, add the repository to path:
 ```
 echo "source /home/$USER/projects/cells_ws/devel/setup.bash" >> ~/.bashrc
+source ~/.bashrc
 ```
 
 
@@ -225,8 +226,8 @@ catkin build -cs --mem-limit 50%
 Now, add the repository to path:
 ```
 echo "source /home/$USER/projects/robothon_ws/devel/setup.bash" >> ~/.bashrc
+source ~/.bashrc
 ```
-
 
 ## Utilities
 you may want to use some shortcut to:
