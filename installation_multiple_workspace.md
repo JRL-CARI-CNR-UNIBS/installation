@@ -67,7 +67,7 @@ The package _robotiq_3f_gripper_articulated_gazebo_plugins_ could fail during co
 
 Now, add the repository to path:
 ```
-echo "source /home/$USER/projects/third_parties/devel/setup.bash" >> ~/.bashrc
+echo "source /home/$USER/projects/third_parties_ws/devel/setup.bash" >> ~/.bashrc
 ```
 To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
 
