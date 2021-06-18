@@ -110,7 +110,7 @@ git merge B_branch A_branch
   ```
   * create your files, commit them and then push to the master:
   ```
-  git push -origin master
+   git push --set-upstream origin master
   ```
 
 ### Git difftool
