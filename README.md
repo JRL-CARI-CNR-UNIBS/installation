@@ -54,17 +54,17 @@ git status
 ```
 * to push your file to the online repository, follow these steps:
   * stage the modified files:
-```
-git add -A
-```
+  ```
+  git add -A
+  ```
   * create a commit:
-```
-git commit -m "write your comment here"
-```
+  ```
+  git commit -m "write your comment here"
+  ```
   * push your work to the online repository:
-```
-git push
-```
+  ```
+  git push
+  ```
 * download the changes of your branch present online but not present locally:
 ```
 git pull
@@ -85,10 +85,10 @@ git checkout branch_name
 ```
 git log
 ```
-with branches graph:
-```
-git log --all --decorate --graph
-```
+  with branches graph:
+  ```
+  git log --all --decorate --graph
+  ```
 * see staged files and choose if unstage them one at a time
 ```
 git checkout -p
