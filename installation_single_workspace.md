@@ -22,7 +22,7 @@ install and configure rosdep: follow the steps described in http://wiki.ros.org/
 
 instal git and other depedencies
 ```
-sudo apt install git  build-essential libqt5charts5-dev
+sudo apt install git  build-essential libqt5charts5-dev  qtquickcontrols2-5-dev
 ```
 
 ### Automatic installation  (STILL WORKING IN PROGRESS)
