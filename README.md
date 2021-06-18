@@ -43,7 +43,45 @@ catkin clean --orphans
 nano ~/.gdbinit
 set print thread-events off
 ```
+### Git useful commands
 
+* see repository status
+```
+git status
+```
+* to push your file on online repository, follow these steps:
+** stage the modified files:
+```
+git add -A
+```
+** create a commit:
+```
+git commit -m "write your comment here"
+```
+** push your work on online repository:
+```
+git push
+```
+* see the local and remote branches
+```
+git branch --all
+```
+* remove a file
+```
+git rm file_name
+```
+* see commits list
+```
+git log
+```
+with branches evolution:
+```
+git log --all --decorate --graph
+```
+* unstage files one at a time
+```
+git checkout -p
+```
 
 ### Git difftool
 
@@ -68,30 +106,4 @@ alias gitdiff_commit='git difftool HEAD origin/HEAD'
 alias gitdiff_lastpush='git difftool HEAD^ HEAD'
 alias gitdiff_unstaged='git difftool'
 
-```
-### Git useful commands
-
-* see repository status
-```
-git status
-```
-* see the local and remote branches
-```
-git branch --all
-```
-* remove a file
-```
-git rm file_name
-```
-* see commits list
-```
-git log
-```
-with branches evolution:
-```
-git log --all --decorate --graph
-```
-* unstage files one at a time
-```
-git checkout -p
 ```
