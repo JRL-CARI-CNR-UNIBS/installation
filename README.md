@@ -10,7 +10,7 @@ _see [here](installation_single_workspace.md)_
 ## Installation on multiple (overlayed) workspaces
 _see [here](installation_multiple_workspace.md)_
 
-# Configure KDevelop
+# Configure QtCreator
 _see [here](qtcreator.md)_
 
 # Configure Atom
