@@ -39,7 +39,7 @@ To make the change effective, open and close the terminals or run _source ~/.bas
 ### create workspace
 ```
 mkdir -p ~/projects/ros_ws/src
-cd ~/projects/third_parties_ws
+cd ~/projects/ros_ws
 catkin init
 mkdir rosinstall
 wstool init src

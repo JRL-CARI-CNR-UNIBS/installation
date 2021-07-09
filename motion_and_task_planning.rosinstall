@@ -26,3 +26,6 @@
 - git:
     local-name: perception/object_loader
     uri: https://bitbucket.org/iras-ind/object_loader.git
+- git:
+    local-name: manipulation_interface
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/manipulation_interface.git
