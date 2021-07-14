@@ -45,13 +45,6 @@ mkdir rosinstall
 wstool init src
 ```
 
-Now, add the repository to path:
-```
-echo "source /home/$USER/projects/ros_ws/devel/setup.bash" >> ~/.bashrc
-```
-To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
-
-
 ### Third parties repositories
 ```
 wget https://raw.githubusercontent.com/JRL-CARI-CNR-UNIBS/installation/master/third_parties.rosinstall -P ./rosinstall
@@ -64,6 +57,12 @@ source devel/setup.bash
 ```
 
 The package _robotiq_3f_gripper_articulated_gazebo_plugins_ could fail during compilation, but it is not needed.
+
+Now, add the repository to path:
+```
+echo "source /home/$USER/projects/ros_ws/devel/setup.bash" >> ~/.bashrc
+```
+To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
 
 
 ### control repositories
