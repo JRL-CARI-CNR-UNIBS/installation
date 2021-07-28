@@ -4,3 +4,9 @@
 - git:
     local-name: robothon_state_machine
     uri: https://CNR-ITIA@bitbucket.org/CNR-ITIA/robothon_state_machine.git
+ - git:
+    local-name: robothon_go_to_location
+    uri: https://CNR-ITIA@bitbucket.org/CNR-ITIA/robothon_go_to_location.git
+ - git:
+    local-name: robothon_job_execution
+    uri: https://CNR-ITIA@bitbucket.org/CNR-ITIA/robothon_job_execution.git  
