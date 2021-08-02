@@ -136,8 +136,6 @@ alias gitdiff_commit='git difftool HEAD origin/HEAD'
 alias gitdiff_lastpush='git difftool HEAD^ HEAD'
 alias gitdiff_unstaged='git difftool'
 
-```
-
 ### Bash tips
 
 Copy these commands into your .bashrc file:
@@ -163,4 +161,3 @@ unset color_prompt force_color_prompt
 function cd {
     builtin cd "$@" && ls -F
     }
-```
