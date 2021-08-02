@@ -165,7 +165,7 @@ alias gitdiff_unstaged='git difftool'
 
 ### Bash tips
 
-Copy these commands into your ~.bashrc file:
+Copy these commands into your .bashrc file:
 * see git branch name next to the path in the terminal
 
 ```
