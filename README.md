@@ -138,31 +138,6 @@ alias gitdiff_unstaged='git difftool'
 
 ```
 
-### Git difftool
-
-* see commited but non pushed files
-```
-git difftool HEAD origin/HEAD
-```
-
-* see last pushed files
-```
-git difftool HEAD^ HEAD
-```
-
-* see unstaged files (the files that you don't add with _git add -A_)
-```
-git difftool
-```
-
-* you can put these line in ~/.bashrc to create a shortcut
-```
-alias gitdiff_commit='git difftool HEAD origin/HEAD'
-alias gitdiff_lastpush='git difftool HEAD^ HEAD'
-alias gitdiff_unstaged='git difftool'
-
-
-
 ### Bash tips
 
 Copy these commands into your .bashrc file:
