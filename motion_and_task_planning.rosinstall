@@ -10,13 +10,14 @@
 - git:
     local-name: motion/human_aware_motion_planners
     uri: https://bitbucket.org/iras-ind/human_aware_motion_planners
-    version: manuel-devel
+    version: cesare-devel
 - git:
     local-name: motion/multigoal_test
     uri: https://github.com/CNR-STIIMA-IRAS/multigoal_test.git
 - git:
     local-name: motion/online_replanner
     uri: https://github.com/JRL-CARI-CNR-UNIBS/online_replanner
+    version: devel
 - git:
     local-name: task-planner-interface
     uri: https://bitbucket.org/CNR-ITIA/task-planner-interface
