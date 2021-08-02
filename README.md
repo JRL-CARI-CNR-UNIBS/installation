@@ -137,3 +137,55 @@ alias gitdiff_lastpush='git difftool HEAD^ HEAD'
 alias gitdiff_unstaged='git difftool'
 
 ```
+
+### Git difftool
+
+* see commited but non pushed files
+```
+git difftool HEAD origin/HEAD
+```
+
+* see last pushed files
+```
+git difftool HEAD^ HEAD
+```
+
+* see unstaged files (the files that you don't add with _git add -A_)
+```
+git difftool
+```
+
+* you can put these line in ~/.bashrc to create a shortcut
+```
+alias gitdiff_commit='git difftool HEAD origin/HEAD'
+alias gitdiff_lastpush='git difftool HEAD^ HEAD'
+alias gitdiff_unstaged='git difftool'
+
+
+
+### Bash tips
+
+Copy these commands into your ~.bashrc file:
+* see git branch name next to the path in the terminal
+
+```
+force_color_prompt=yes
+color_prompt=yes
+parse_git_branch() {
+ git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+if [ "$color_prompt" = yes ]; then
+ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;31m\]$(parse_git_branch)\[\033[00m\]\$ '
+else
+ PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(parse_git_branch)\$ '
+fi
+unset color_prompt force_color_prompt
+```
+
+* automatic ls after cd or roscd
+
+```
+function cd {
+    builtin cd "$@" && ls -F
+    }
+```
