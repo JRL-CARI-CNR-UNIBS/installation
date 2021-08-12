@@ -19,6 +19,9 @@
     uri: https://github.com/JRL-CARI-CNR-UNIBS/online_replanner
     version: devel
 - git:
+    local-name: motion_controllers/replanner_fjt_controller
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/replanner_fjt_controller.git
+- git:
     local-name: task-planner-interface
     uri: https://bitbucket.org/CNR-ITIA/task-planner-interface
 - git:
