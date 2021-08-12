@@ -2,6 +2,9 @@
     local-name: manipulation
     uri: https://github.com/JRL-CARI-CNR-UNIBS/manipulation
 - git:
+    local-name: manipulation_examples
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/manipulation_examples.git
+- git:
     local-name: graph_display
     uri: https://github.com/JRL-CARI-CNR-UNIBS/graph_display
 - git:
@@ -15,6 +18,9 @@
     local-name: motion/online_replanner
     uri: https://github.com/JRL-CARI-CNR-UNIBS/online_replanner
 - git:
+    local-name: motion_controllers/replanner_fjt_controller
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/replanner_fjt_controller.git
+- git:
     local-name: task-planner-interface
     uri: https://bitbucket.org/CNR-ITIA/task-planner-interface
 - git:
@@ -23,3 +29,6 @@
 - git:
     local-name: perception/object_loader
     uri: https://bitbucket.org/iras-ind/object_loader.git
+- git:
+    local-name: manipulation_interface
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/manipulation_interface.git

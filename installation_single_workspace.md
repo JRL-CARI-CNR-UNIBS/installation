@@ -22,7 +22,7 @@ install and configure rosdep: follow the steps described in http://wiki.ros.org/
 
 instal git and other depedencies
 ```
-sudo apt install git  build-essential libqt5charts5-dev
+sudo apt install git  build-essential libqt5charts5-dev  qtquickcontrols2-5-dev
 ```
 
 ### Automatic installation  (STILL WORKING IN PROGRESS)
@@ -39,18 +39,11 @@ To make the change effective, open and close the terminals or run _source ~/.bas
 ### create workspace
 ```
 mkdir -p ~/projects/ros_ws/src
-cd ~/projects/third_parties_ws
+cd ~/projects/ros_ws
 catkin init
 mkdir rosinstall
 wstool init src
 ```
-
-Now, add the repository to path:
-```
-echo "source /home/$USER/projects/ros_ws/devel/setup.bash" >> ~/.bashrc
-```
-To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
-
 
 ### Third parties repositories
 ```
@@ -64,6 +57,12 @@ source devel/setup.bash
 ```
 
 The package _robotiq_3f_gripper_articulated_gazebo_plugins_ could fail during compilation, but it is not needed.
+
+Now, add the repository to path:
+```
+echo "source /home/$USER/projects/ros_ws/devel/setup.bash" >> ~/.bashrc
+```
+To make the change effective, open and close the terminals or run _source ~/.bashrc_ manually.
 
 
 ### control repositories
