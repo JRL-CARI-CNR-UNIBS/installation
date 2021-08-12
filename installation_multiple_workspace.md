@@ -243,4 +243,5 @@ Let's suppose that you download [this repository](https://github.com/JRL-CARI-CN
 alias rr='source ~/projects/installation/source_all_ws.bash'
 alias status_ws='source ~/projects/installation/status_of_ws.bash'
 alias update_ws='source  ~/projects/installation/update_all_ws.bash'
+alias compile_ws='source  ~/projects/installation/compile_all_ws.bash'
 ```
