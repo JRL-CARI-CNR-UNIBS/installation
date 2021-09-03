@@ -31,7 +31,7 @@
     uri: https://github.com/CNR-STIIMA-IRAS/ssm_safety.git
 - git:
     local-name: perception/object_loader
-    uri: https://bitbucket.org/iras-ind/object_loader.git
+    uri: https://github.com/CNR-STIIMA-IRAS/object_loader.git
 - git:
     local-name: manipulation_interface
     uri: https://github.com/JRL-CARI-CNR-UNIBS/manipulation_interface.git
