@@ -9,7 +9,7 @@
     uri: https://github.com/JRL-CARI-CNR-UNIBS/graph_display
 - git:
     local-name: motion/human_aware_motion_planners
-    uri: https://bitbucket.org/iras-ind/human_aware_motion_planners
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/cari_motion_planning.git
     version: cesare-devel
 - git:
     local-name: motion/multigoal_test
@@ -18,6 +18,9 @@
     local-name: motion/online_replanner
     uri: https://github.com/JRL-CARI-CNR-UNIBS/online_replanner
     version: devel
+- git:
+    local-name: motion/replanning_strategies
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/replanning_strategies.git
 - git:
     local-name: motion/replanning_strategies
     uri: https://github.com/JRL-CARI-CNR-UNIBS/replanning_strategies.git
