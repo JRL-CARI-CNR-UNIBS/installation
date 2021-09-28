@@ -89,6 +89,10 @@ git log
   ```
   git log --all --decorate --graph
   ```
+* see remote url and tracked braches:
+```
+git remote show origin
+```
 * see staged files and choose if unstage them one at a time
 ```
 git checkout -p
