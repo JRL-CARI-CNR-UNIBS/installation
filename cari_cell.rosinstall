@@ -32,8 +32,8 @@
     uri: https://github.com/JRL-CARI-CNR-UNIBS/ros_myo.git
 - git:
     local-name: motion/human_aware_motion_planners
-    uri: https://bitbucket.org/iras-ind/human_aware_motion_planners
-    version: version2
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/cari_motion_planning.git
+    version: master
 - git:
     local-name: perception/object_loader
     uri: https://bitbucket.org/iras-ind/object_loader.git

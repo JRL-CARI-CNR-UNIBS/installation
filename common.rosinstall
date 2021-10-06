@@ -128,7 +128,7 @@
     uri: https://github.com/JRL-CARI-CNR-UNIBS/deterministic_replanning
 - git:
     local-name: motion/human_aware_motion_planners
-    uri: https://bitbucket.org/iras-ind/human_aware_motion_planners
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/cari_motion_planning.git
     version: manuel-devel
 - git:
     local-name: motion/moveit/moveit_planning_helper
