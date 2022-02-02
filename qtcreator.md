@@ -1,11 +1,12 @@
-# configure qtcreator
+# Configure Qtcreator
 
-Always run _qtcreator_ from terminal to source the ROS environmental varialle
+Always run _qtcreator_ from terminal to source the ROS environmental variable
 
-# open a package the first time
+# Qtcreator installed using sudo apt install (Qtcreator 4)
+## open a package the first time
 There are two methods to correctly import a package, in both cases you have to compile the package once from terminal before importing the package.
 
-## option 1
+### option 1
 
 - Click on Tools->options
 
@@ -16,7 +17,7 @@ where **[WORKSPACE]** is the workspace name of the package you want to open.
 
 - open the CMakeLists.txt file of the package
 
-## option 2
+### option 2
 
 
 - open the CMakeLists.txt file of the package
@@ -34,3 +35,26 @@ where **[WORKSPACE]** is the workspace name of the package you want to open.
 ![alt text](images/configure_build04.png)
 
 - click on import
+
+# Qtcreator installed using the online installer (Qtcreator 6)
+First, open Qtcreator and change the default build directory:
+
+- Click on Tools->options
+- Select Build & Run
+- In Default build directory, set __/home/jacobi/projects/**[WORKSPACE]**/build/%{CurrentProject:Name}__
+where **[WORKSPACE]** is the workspace name of the package you want to open.
+
+When you want to import a package make sure you have already compiled it.
+Then, open Qtcreator:
+
+- File -> open file or project and select the CMakeLists.txt file of the package
+- Select Import Existing Build and select the package in the build folder of the workspace
+__/home/jacobi/projects/**[WORKSPACE]**/build/[CurrentProjecName]__
+
+![alt text](images/nerd_configure_project.png)
+
+-In Edit build configuration change to Debug or Release depending on the variable CMAKE_BUILD_TYPE SET IN THE .txt file. Note: the two fields must coincide
+
+![alt text](images/nerd_import_build.png)
+
+- Now you can go to edit tab to work with your package
