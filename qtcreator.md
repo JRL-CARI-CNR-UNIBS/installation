@@ -1,6 +1,6 @@
 # configure qtcreator
 
-Always run _qtcreator_ from terminal to source the ROS environmental varialle
+Always run _qtcreator_ from terminal to source the ROS environmental variable
 
 # open a package the first time
 There are two methods to correctly import a package, in both cases you have to compile the package once from terminal before importing the package.
