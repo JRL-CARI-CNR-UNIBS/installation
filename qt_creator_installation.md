@@ -8,7 +8,7 @@ Install the IDE:
 ``` console
 sudo apt install qtcreator
 ```
-Then, install the necessary libraries and compilers and set Qt5 as default Qt version:
+Then, install the necessary libraries and compilers:
 ```console
 sudo apt install build-essential
 sudo apt install qt5-default
@@ -16,7 +16,13 @@ sudo apt install qt5-default
 see _[here](qtcreator.md)_ to configure Qtcreator
 
 ## Nerdy way
-To install a more recent version of Qtcreator than the one distributed by the main distribution repository, follow these steps:
+In this way you can install a more recent version of Qtcreator than the one distributed by the main distribution repository. 
+If in the past you loved the easy life and you installed Qtcreator with sudo apt install but now you understand that the easy life is not for you, uninstall Qtcreator with the following command:
+```console
+sudo apt-get remove qtcreator*
+```
+Now, install a recent version using the online installer:
+
 1. Install required packages:
 ```console
 sudo apt-get update
