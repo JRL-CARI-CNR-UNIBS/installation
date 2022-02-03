@@ -12,7 +12,7 @@ There are two methods to correctly import a package, in both cases you have to c
 
 - Select Build & Run
 
-- In Default build directory, set __/home/jacobi/projects/**[WORKSPACE]**/build/%{CurrentProject:Name}__
+- In Default build directory, set __/home/user/projects/**[WORKSPACE]**/build/%{CurrentProject:Name}__
 where **[WORKSPACE]** is the workspace name of the package you want to open.
 
 - open the CMakeLists.txt file of the package
@@ -31,7 +31,7 @@ where **[WORKSPACE]** is the workspace name of the package you want to open.
 - click on details
 ![alt text](images/configure_build03.png)
 
-- click on browse and select the build directory or the package __/home/jacobi/projects/**[WORKSPACE]**/build/[CurrentProjecName]__
+- click on browse and select the build directory or the package __/home/user/projects/**[WORKSPACE]**/build/[CurrentProjecName]__
 ![alt text](images/configure_build04.png)
 
 - click on import
@@ -41,7 +41,7 @@ First, open Qtcreator and change the default build directory:
 
 - Click on Tools->options
 - Select Build & Run
-- In Default build directory, set __/home/jacobi/projects/**[WORKSPACE]**/build/%{CurrentProject:Name}__
+- In Default build directory, set __/home/user/projects/**[WORKSPACE]**/build/%{CurrentProject:Name}__
 where **[WORKSPACE]** is the workspace name of the package you want to open.
 
 When you want to import a package make sure you have already compiled it.
@@ -49,11 +49,11 @@ Then, open Qtcreator:
 
 - File -> open file or project and select the CMakeLists.txt file of the package
 - Select Import Existing Build and select the package in the build folder of the workspace
-__/home/jacobi/projects/**[WORKSPACE]**/build/[CurrentProjecName]__
+__/home/user/projects/**[WORKSPACE]**/build/[CurrentProjecName]__
 
 ![alt text](images/nerd_configure_project.png)
 
--In Edit build configuration change to Debug or Release depending on the variable CMAKE_BUILD_TYPE SET IN THE .txt file. Note: the two fields must coincide
+-In Edit build configuration change to Debug or Release depending on the variable CMAKE_BUILD_TYPE set in the CMakeLists.txt file. Note: the two fields must coincide
 
 ![alt text](images/nerd_import_build.png)
 
