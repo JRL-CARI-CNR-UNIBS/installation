@@ -40,6 +40,14 @@
     local-name: manipulation_interface
     uri: https://github.com/JRL-CARI-CNR-UNIBS/manipulation_interface.git
 - git:
+    local-name: manipulation_interface_example
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/manipulation_interface_example.git
+- git:
+    local-name: manipulation_jobs
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/manipulation_jobs.git
+- git:
+    local-name: manipulation_jobs_msgs
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/manipulation_jobs_msgs.git
     local-name: motion/motion_planning_development_tests
     uri: https://github.com/JRL-CARI-CNR-UNIBS/motion_planning_development_tests.git
     version: cesare-devel
