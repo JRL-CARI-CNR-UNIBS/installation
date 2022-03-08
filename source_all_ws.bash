@@ -2,8 +2,10 @@
 
 
 
-source ~/projects/third_parties_ws/devel/setup.bash
-source ~/projects/control_ws/devel/setup.bash
-source ~/projects/planning_ws/devel/setup.bash
-source ~/projects/perception_ws/devel/setup.bash
-source ~/projects/sharework_ws/devel/setup.bash
+#source ~/ros/cnr/third_parties_ws/devel/setup.bash
+#source ~/ros/cnr/control_ws/devel/setup.bash
+#source ~/ros/cnr/planning_ws/devel/setup.bash
+#source ~/ros/cnr/perception_ws/devel/setup.bash
+#source ~/ros/cnr/sharework_ws/devel/setup.bash
+#source ~/ros/cnr/marco_ws/devel/setup.bash
+source ~/ros/cnr/cells_ws/devel/setup.bash

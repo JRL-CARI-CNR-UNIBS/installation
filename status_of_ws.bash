@@ -2,8 +2,8 @@
 
 
 
-wstool status -t ~/projects/third_parties_ws/src
-wstool status -t ~/projects/control_ws/src
-wstool status -t ~/projects/planning_ws/src
-wstool status -t ~/projects/perception_ws/src
-wstool status -t ~/projects/sharework_ws/src
+wstool status -t ~/ros/cnr/third_parties_ws/src
+wstool status -t ~/ros/cnr/control_ws/src
+wstool status -t ~/ros/cnr/planning_ws/src
+wstool status -t ~/ros/cnr/perception_ws/src
+wstool status -t ~/ros/cnr/sharework_ws/src
