@@ -7,4 +7,9 @@
 - git:
     local-name: panda_cnr_ros_control
     uri: https://github.com/JRL-CARI-CNR-UNIBS/panda_cnr_ros_control.git
-    
+- git:
+    local-name: hrc_simulator
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/hrc_simulator.git
+- git:
+    local-name:  multi_robot_cells
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/multi_robot_cells.git
