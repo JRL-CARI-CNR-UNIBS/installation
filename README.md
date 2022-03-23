@@ -31,24 +31,23 @@ Cannot connect to the UR10e robot:
 
 ## Useful stuff
 
-### catkin commands
+### Catkin commands
 * clean all the deleted packages
 ```
 catkin clean --orphans
 ```
 
 ### Debug commands
-
 * disable thread message in gdb:
 ```
 nano ~/.gdbinit
 set print thread-events off
 ```
+
 ### Git commands
 _see [here](git_useful_commands.md)_
 
 ### Bash tips
-
 Copy these commands into your .bashrc file:
 * see git branch name next to the path in the terminal. It also show the status of the branch (unstaged files, sync with remote), see [here](https://jon.sprig.gs/blog/post/1940) for details
 
