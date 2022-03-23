@@ -1,6 +1,12 @@
 # Installation
 
-## Install ROS packages
+1. [Install ROS packages](#ros)
+2. [QtCreator](#qt)
+3. [Atom](#atom)
+4. [Troubleshooting with Sharework cell](#troubleshoot)
+5. [Useful stuff](#tricks)
+
+## Install ROS packages <a name="ros"></a>
 
 Installation of the JRL-CARI Workspace can be done in a single workspace or a multiple workspaces.
 The second saves you times during compilation.
@@ -12,16 +18,16 @@ _see [here](installation_single_workspace.md)_
 ### Installation on multiple (overlayed) workspaces
 _see [here](installation_multiple_workspace.md)_
 
-## Install QtCreator
+## Install QtCreator <a name="qt"></a>
 _see [here](qt_creator_installation.md)_
 
 ## Configure QtCreator
 _see [here](qtcreator.md)_
 
-## Configure Atom
+## Configure Atom <a name="atom"></a>
 _see [here](atom.md)_
 
-## Troubleshooting with Sharework cell
+## Troubleshooting with Sharework cell <a name="troubleshoot"></a>
 
 Cannot connect to the UR10e robot:
 
@@ -29,7 +35,7 @@ Cannot connect to the UR10e robot:
 2) if yes, can you login to the robot (ssh root@192.168.10.1  pwd:easybot)?
 3) if yes, did you open the firewall ports?  sudo ufw allow 50001/tcp AND sudo ufw allow 50002/tcp
 
-## Useful stuff
+## Useful stuff <a name="tricks"></a>
 
 ### Catkin commands
 * clean all the deleted packages
