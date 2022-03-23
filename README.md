@@ -45,7 +45,6 @@ nano ~/.gdbinit
 set print thread-events off
 ```
 ### Git commands
-* clone an online repository
 _see [here](git_useful_commands.md)_
 
 ### Bash tips
