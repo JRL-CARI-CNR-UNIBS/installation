@@ -12,7 +12,7 @@ _see [here](installation_single_workspace.md)_
 ### Installation on multiple (overlayed) workspaces
 _see [here](installation_multiple_workspace.md)_
 
-## Install QtCreator(qt_creator_installation.md)
+## [Install QtCreator](qt_creator_installation.md)
 _see [here](qt_creator_installation.md)_
 
 ## Configure QtCreator
