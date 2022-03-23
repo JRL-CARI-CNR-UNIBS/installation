@@ -1,5 +1,6 @@
 ## Git useful commands
 
+* clone an online repository
 ```
 git clone URL
 ```
