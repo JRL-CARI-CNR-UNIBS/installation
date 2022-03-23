@@ -3,6 +3,10 @@
 1. [Clone a repository](#clone)
 2. [Some paragraph](#statys)
 3. [Push files to online repository](#push)
+4. [Get files from online repository](#pull)
+5. [Check and create branches](#branches)
+6. [Create a GitHub repository](#create)
+7. [Git difftool](#difftool)
 
 ### Clone a repository <a name="clone"></a>
 ```
@@ -26,6 +30,8 @@ Follow the following steps:
   ```
   git push
   ```
+### Get files from online repository <a name="pull"></a>
+You can:
 * download the changes of your branch present online but not present locally:
 ```
 git pull
@@ -34,6 +40,8 @@ git pull
 ```
 git fetch
 ```
+
+### Check and create branches <a name="branches"></a>
 * see the local and remote branches
 ```
 git branch --all
@@ -62,6 +70,8 @@ git checkout -p
 ```
 git merge B_branch A_branch
 ```
+
+### Create a GitHub repository <a name="create"></a>
 * create a GitHub repository from scratch:
   * create the repo on GitHub and copy the URL
   * create the repo on your pc with the same name
@@ -78,7 +88,7 @@ git merge B_branch A_branch
    git push --set-upstream origin master
   ```
 
-### Git difftool
+### Git difftool <a name="difftool"></a>
 
 * see commited but non pushed files
 ```
