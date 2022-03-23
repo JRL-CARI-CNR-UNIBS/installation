@@ -5,8 +5,9 @@ Always run _qtcreator_ from terminal to source the ROS environmental variable
 # Qtcreator installed using sudo apt install (Qtcreator 4)
 
 ```diff
-text in red
-- text
+- Bugfix: QtCreator 4 with Ubuntu 20.04
+- QtCreator 4.11 running on Ubuntu 20.04 has a known bug that affects semantic highlighting.
+- To fix it go to Help -> About plugins and uncheck "ClangCodeModel"
 ```
 
 ## open a package the first time
