@@ -5,7 +5,7 @@ Always run _qtcreator_ from terminal to source the ROS environmental variable
 # Qtcreator installed using sudo apt install (Qtcreator 4)
 
 ```diff
--- text in red-- 
+text in red
 - text
 ```
 
