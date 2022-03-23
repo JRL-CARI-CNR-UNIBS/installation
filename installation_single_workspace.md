@@ -25,7 +25,7 @@ instal git and other depedencies
 sudo apt install git  build-essential libqt5charts5-dev  qtquickcontrols2-5-dev
 ```
 
-### Automatic installation  (STILL WORKING IN PROGRESS)
+### Automatic installation  (STILL WORK IN PROGRESS)
 
 All the installation can be done by using [this script](automated_script_single_workspace.bash)
 ```
