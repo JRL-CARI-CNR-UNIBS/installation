@@ -1,7 +1,7 @@
 ## Git useful commands
 
 1. [Clone a repository](#clone)
-2. [Check repository status](#statys)
+2. [Check repository status](#status)
 3. [Push files to online repository](#push)
 4. [Get files from online repository](#pull)
 5. [Check and create branches](#branches)
