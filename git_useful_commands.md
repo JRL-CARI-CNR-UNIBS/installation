@@ -70,6 +70,15 @@ git checkout -p
 ```
 git merge B_branch A_branch
 ```
+#### Create a new branch and synchronize with remote repository
+
+Create new branch:
+```
+git checkout -b <new_branch>
+git add -A
+git commit -m "your message"
+git push -u origin <new_branch>
+```
 
 ### Create a GitHub repository <a name="create"></a>
 * create a GitHub repository from scratch:
