@@ -3,6 +3,12 @@
 Always run _qtcreator_ from terminal to source the ROS environmental variable
 
 # Qtcreator installed using sudo apt install (Qtcreator 4)
+
+```diff
+-- text in red-- 
+- text
+```
+
 ## open a package the first time
 There are two methods to correctly import a package, in both cases you have to compile the package once from terminal before importing the package.
 
