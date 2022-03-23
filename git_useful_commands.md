@@ -71,8 +71,6 @@ git checkout -p
 git merge B_branch A_branch
 ```
 #### Create a new branch and synchronize with remote repository
-
-Create new branch:
 ```
 git checkout -b <new_branch>
 git add -A
