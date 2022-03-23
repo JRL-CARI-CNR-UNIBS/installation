@@ -1,15 +1,20 @@
 ## Git useful commands
 
-* clone an online repository
+1. [Clone a repository](#clone)
+2. [Some paragraph](#statys)
+3. [Push files to online repository](#push)
+
+### Clone a repository <a name="clone"></a>
 ```
 git clone URL
 ```
-* see repository status
+### Check repository status <a name="status"></a>
 ```
 git status
 ```
-* to push your file to the online repository, follow these steps:
-  * stage the modified files:
+### Push files to online repository <a name="push"></a>
+Follow the following steps:
+* stage the modified files:
   ```
   git add -A
   ```
