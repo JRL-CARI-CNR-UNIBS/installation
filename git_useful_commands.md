@@ -17,17 +17,9 @@ git clone URL
 git status
 ```
 ### Push files to online repository <a name="push"></a>
-Follow the following steps:
-* stage the modified files:
   ```
   git add -A
-  ```
-  * create a commit:
-  ```
   git commit -m "write your comment here"
-  ```
-  * push your work to the online repository:
-  ```
   git push
   ```
 ### Get files from online repository <a name="pull"></a>
@@ -90,8 +82,10 @@ git push -u origin <new_branch>
   ```
   git remote add origin URL
   ```
-  * create your files, commit them and then push to the master:
+  * create your files, then push to the master:
   ```
+   git add -A
+   git commit -m "your message"
    git push --set-upstream origin master
   ```
 
