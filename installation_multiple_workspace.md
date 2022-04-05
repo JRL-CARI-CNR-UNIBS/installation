@@ -229,6 +229,14 @@ echo "source /home/$USER/projects/robothon_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
 
+## Required apt packages
+Some ROS packages need to be installed from apt:
+```
+sudo apt-get install ros-noetic-trac-ik-kinematics-plugin
+sudo apt-get install ros-noetic-realsense2-description
+sudo apt-get install ros-noetic-realsense2-camera
+```
+
 ## Utilities
 you may want to use some shortcut to:
 -  (re)load the environment variables
