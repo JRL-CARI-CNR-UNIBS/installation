@@ -3,6 +3,17 @@
 Always run _qtcreator_ from terminal to source the ROS environmental variable
 
 # Qtcreator installed using sudo apt install (Qtcreator 4)
+
+```diff
+- Bugfix: QtCreator 4 with Ubuntu 20.04
+- QtCreator 4.11 running on Ubuntu 20.04 has a known bug that affects semantic highlighting.
+- To fix it go to Help->About plugins and uncheck "ClangCodeModel"
+```
+
+## set tag and indent size
+
+Pleas set "Tab size" and "Indent size" equal to 2 in _Tools->Options->Text Editor->Behavior_. This helps portability of the indentation.
+
 ## open a package the first time
 There are two methods to correctly import a package, in both cases you have to compile the package once from terminal before importing the package.
 

@@ -204,3 +204,6 @@
 - git:
     local-name: visualization/cnr_robot_visual_tools
     uri: https://bitbucket.org/CNR-ITIA/cnr_robot_visual_tools
+- git:
+    local-name: robot_control_algorithms
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/robot_control_algorithms.git

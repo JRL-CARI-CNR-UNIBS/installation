@@ -8,12 +8,6 @@
     local-name: motion/thor/thor_impedance_controller
     uri: https://bitbucket.org/iras-ind/thor_impedance_controller.git
 - git:
-    local-name: projects/hrc_simulator/hrc-cell
-    uri: https://bitbucket.org/iras-ind/hrc-cell.git
-- git:
-    local-name: projects/hrc_simulator/hrc_mosaic_test
-    uri: https://bitbucket.org/iras-ind/hrc_mosaic_test.git
-- git:
     local-name: projects/hrc_simulator/task-planner-interface
     uri: https://bitbucket.org/CNR-ITIA/task-planner-interface
 
