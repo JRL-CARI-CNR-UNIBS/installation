@@ -25,8 +25,8 @@
     local-name: motion_controllers/replanner_fjt_controller
     uri: https://github.com/JRL-CARI-CNR-UNIBS/replanner_fjt_controller.git
 - git:
-    local-name: task-planner-interface
-    uri: https://bitbucket.org/CNR-ITIA/task-planner-interface
+    local-name: task_planner_interface
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/task_planner_interface
 - git:
     local-name: safety/ssm_safety
     uri: https://github.com/CNR-STIIMA-IRAS/ssm_safety.git

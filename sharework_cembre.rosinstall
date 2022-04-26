@@ -15,4 +15,4 @@
     uri: https://bitbucket.org/iras-ind/sharework_cell.git
 - git:
     local-name: sharework_task_planning
-    uri: https://bitbucket.org/CNR-ITIA/sharework_task_planning.git
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/sharework_task_planning.git
