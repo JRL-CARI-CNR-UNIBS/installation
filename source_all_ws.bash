@@ -6,4 +6,4 @@ source ~/projects/planning_ws/devel/setup.bash
 source ~/projects/perception_ws/devel/setup.bash
 source ~/projects/sharework_ws/devel/setup.bash
 source ~/projects/cells_ws/devel/setup.bash
-source ~/projects/helicopter_ws/devel/setup.bash
+source ~/projects/comau_helicopter_ws/devel/setup.bash
