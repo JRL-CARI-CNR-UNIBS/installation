@@ -16,3 +16,6 @@
 - git:
     local-name:  multi_robot_cells
     uri: https://github.com/JRL-CARI-CNR-UNIBS/multi_robot_cells.git
+- git:
+    local-name:  cell_cartesian
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/cell_cartesian.git
