@@ -91,6 +91,27 @@ git push -u origin <new_branch>
 
 ### Git difftool <a name="difftool"></a>
 
+Difftool is a useful tool to visualize differences between branches/versions with a GUI. To use it:
+
+```
+sudo apt install meld
+```
+Copy this in your ./gitconfig file:
+```
+[diff]
+	guitool = meld
+[difftool "meld"]
+	cmd = meld \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[merge]
+	tool = meld
+[mergetool "meld"]
+	path = /usr/bin/meld
+[mergetool]
+	prompt = false
+```
+
 * see commited but non pushed files
 ```
 git difftool HEAD origin/HEAD

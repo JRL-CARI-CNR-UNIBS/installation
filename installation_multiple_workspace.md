@@ -229,6 +229,16 @@ echo "source /home/$USER/projects/robothon_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
 
+## Required apt packages
+Some ROS packages need to be installed from apt:
+```
+sudo apt-get install ros-$ROS_DISTRO-trac-ik-kinematics-plugin
+sudo apt-get install ros-$ROS_DISTRO-pilz-industrial-motion
+sudo apt-get install ros-$ROS_DISTRO-chomp-motion-planner
+sudo apt-get install ros-$ROS_DISTRO-realsense2-description
+sudo apt-get install ros-$ROS_DISTRO-realsense2-camera
+```
+
 ## Utilities
 you may want to use some shortcut to:
 -  (re)load the environment variables
