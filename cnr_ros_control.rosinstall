@@ -17,10 +17,5 @@
     local-name: rosdyn_utilities
     uri:  https://github.com/CNR-STIIMA-IRAS/rosdyn_utilities.git
 - git:
-    local-name: cnr_control_toolbox
-    uri:  https://github.com/CNR-STIIMA-IRAS/cnr_control_toolbox.git
-- git:
     local-name: cnr_robot_visual_tools
     uri: https://bitbucket.org/CNR-ITIA/cnr_robot_visual_tools
-    
-
