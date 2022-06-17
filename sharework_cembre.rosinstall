@@ -1,18 +1,24 @@
 - git:
-    local-name: ur_simplified
-    uri: https://github.com/JRL-CARI-CNR-UNIBS/ur_simplified.git
-- git:
-    local-name: ur10e_robotiq_simplified
-    uri: https://github.com/JRL-CARI-CNR-UNIBS/ur10e_robotiq_simplified.git
-- git:
-    local-name: ur10e_robotiq
-    uri: https://github.com/JRL-CARI-CNR-UNIBS/ur10e_robotiq.git
+    local-name: mqtt_scene_integration
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/mqtt_scene_integration.git
 - git:
     local-name: sharework_assembly
     uri: https://bitbucket.org/iras-ind/sharework_assembly.git
+- git:
+    local-name: sharework_benchmark
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/sharework_benchmark.git
 - git:
     local-name: sharework_cell
     uri: https://bitbucket.org/iras-ind/sharework_cell.git
 - git:
     local-name: sharework_task_planning
     uri: https://github.com/JRL-CARI-CNR-UNIBS/sharework_task_planning.git
+- git:
+    local-name: ur10e_robotiq
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/ur10e_robotiq.git
+- git:
+    local-name: ur10e_robotiq_simplified
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/ur10e_robotiq_simplified.git
+- git:
+    local-name: ur_simplified
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/ur_simplified.git
