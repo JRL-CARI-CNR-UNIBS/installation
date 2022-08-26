@@ -84,3 +84,19 @@ function cd {
     builtin cd "$@" && ls -F
     }
 ```
+
+### Ubuntu appearance
+
+If you want your dock to look like this:
+
+
+Place this in the terminal:
+
+![alt text](images/ubuntu_appearance.png)
+
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
+gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode FIXED
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 64
+gsettings set org.gnome.shell.extensions.dash-to-dock unity-backlit-items true
+gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
