@@ -90,9 +90,9 @@ function cd {
 If you want your dock to look like this:
 
 
-Place this in the terminal:
-
 ![alt text](images/ubuntu_appearance.png)
+
+Place this in the terminal:
 
 ```
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
