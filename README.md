@@ -87,7 +87,7 @@ function cd {
 
 ### How to write a README.md
 
-README files are Markdown files. Take a look at [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links) for Markdown commands.
+README files are Markdown files. Take a look at [this cheatsheet](https://github.com/adam-p/markdown-here) for Markdown commands.
 
 ### Ubuntu appearance
 
