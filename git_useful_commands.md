@@ -11,7 +11,7 @@
 
 ## A quick guide to Git <a name="git-no-deep-shit"></a>
 
-Take may want to take a look at this [guide](https://www.google.com](https://rogerdudler.github.io/git-guide/) to familiarize with Git versioning.
+Take may want to take a look at this [guide](https://rogerdudler.github.io/git-guide/) to familiarize with Git versioning.
 
 If you're really hungry for knowledge, here is a [500+ pages book](https://git-scm.com/book/en/v2) about Git.
 
