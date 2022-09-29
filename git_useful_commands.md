@@ -1,12 +1,19 @@
 ## Git useful commands
 
-1. [Clone a repository](#clone)
-2. [Check repository status](#status)
-3. [Push files to online repository](#push)
-4. [Get files from online repository](#pull)
-5. [Check and create branches](#branches)
-6. [Create a GitHub repository](#create)
-7. [Git difftool](#difftool)
+1. [A quick guide to Git](#git-no-deep-shit)
+2. [Clone a repository](#clone)
+3. [Check repository status](#status)
+4. [Push files to online repository](#push)
+5. [Get files from online repository](#pull)
+6. [Check and create branches](#branches)
+7. [Create a GitHub repository](#create)
+8. [Git difftool](#difftool)
+
+## A quick guide to Git <a name="git-no-deep-shit"></a>
+
+Take may want to take a look at this [guide]([https://www.google.com](https://rogerdudler.github.io/git-guide/)) to familiarize with Git versioning.
+
+If you're really hungry for knowledge, here is a [500+ pages book](file:///home/hypatia/Downloads/progit.pdf) about Git.
 
 ### Clone a repository <a name="clone"></a>
 ```
