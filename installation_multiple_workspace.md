@@ -261,3 +261,8 @@ Also, put the following line in your .bashrc file to configure your ROSCONSOLE (
 export ROSCONSOLE_FORMAT='[${severity}] [${time}] [${node}] [${line}]: ${message}'
 
 ```
+
+## Visualization
+
+You might consider using PlotJuggler for visualization of topics in ROS.
+See [here](https://github.com/facontidavide/PlotJuggler) for mode details.
