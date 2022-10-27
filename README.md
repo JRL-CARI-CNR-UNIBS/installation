@@ -51,7 +51,7 @@ set print thread-events off
 ```
 
 ### Colored ROS_INFO_STREAM
-Copy this code ((.cpp)[], (.h)[]) in your class to set color for `ROS_INFO_STREAM`
+Copy the code of these files [.cpp](https://github.com/JRL-CARI-CNR-UNIBS/installation/blob/master/log.cpp), [.h](https://github.com/JRL-CARI-CNR-UNIBS/installation/blob/master/log.h) to define colored `ROS_INFO_STREAM`
 
 ### Git commands
 _see [here](git_useful_commands.md)_
