@@ -50,6 +50,9 @@ nano ~/.gdbinit
 set print thread-events off
 ```
 
+### Colored ROS_INFO_STREAM
+Copy this code ((.cpp)[], (.h)[]) in your class to set color for `ROS_INFO_STREAM`
+
 ### Git commands
 _see [here](git_useful_commands.md)_
 
