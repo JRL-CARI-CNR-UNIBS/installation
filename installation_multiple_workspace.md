@@ -255,3 +255,14 @@ alias status_ws='source ~/projects/installation/status_of_ws.bash'
 alias update_ws='source  ~/projects/installation/update_all_ws.bash'
 alias compile_ws='source  ~/projects/installation/compile_all_ws.bash'
 ```
+
+Also, put the following line in your .bashrc file to configure your ROSCONSOLE (ROS_INFO, WARN, ERROR) print:
+```
+export ROSCONSOLE_FORMAT='[${severity}] [${time}] [${node}] [${line}]: ${message}'
+
+```
+
+## Visualization
+
+You might consider using PlotJuggler for visualization of topics in ROS.
+See [here](https://github.com/facontidavide/PlotJuggler) for mode details.

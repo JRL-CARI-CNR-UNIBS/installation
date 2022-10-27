@@ -50,6 +50,9 @@ nano ~/.gdbinit
 set print thread-events off
 ```
 
+### Colored ROS_INFO_STREAM
+Copy this code ((.cpp)[], (.h)[]) in your class to set color for `ROS_INFO_STREAM`
+
 ### Git commands
 _see [here](git_useful_commands.md)_
 
@@ -83,4 +86,26 @@ unset color_prompt force_color_prompt
 function cd {
     builtin cd "$@" && ls -F
     }
+```
+
+### How to write a README.md
+
+README files are Markdown files. Take a look at [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet) for Markdown commands.
+
+### Ubuntu appearance
+
+If you want your dock to look like this:
+
+
+![alt text](images/ubuntu_appearance.png)
+
+Place this in the terminal:
+
+```
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
+gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode FIXED
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 64
+gsettings set org.gnome.shell.extensions.dash-to-dock unity-backlit-items true
+gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
 ```
