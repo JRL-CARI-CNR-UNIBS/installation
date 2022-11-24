@@ -22,3 +22,7 @@ source ~/projects/perception_ws/devel/setup.bash
 ###
 catkin build -cs --workspace ~/projects/sharework_ws/  --mem-limit 30% -j 4
 source ~/projects/sharework_ws/devel/setup.bash
+
+###
+catkin build -cs --workspace ~/projects/cell_ws/  --mem-limit 30% -j 4
+source ~/projects/cell_ws/devel/setup.bash
