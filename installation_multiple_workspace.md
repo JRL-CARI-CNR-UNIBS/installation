@@ -91,6 +91,7 @@ wstool merge -t src ./rosinstall/controllers.rosinstall
 wstool update -t src
 rosdep install --from-paths src --ignore-src -r -y
 catkin config -j 2
+catkin config --cmake-args -DCMAKE_BUILD_TYPE=Release
 catkin build -cs --mem-limit 30%
 ```
 
