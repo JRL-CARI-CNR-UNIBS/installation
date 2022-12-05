@@ -8,7 +8,7 @@ catkin build -cs --workspace ~/projects/third_parties_ws/  --mem-limit 30% -j 4
 source ~/projects/third_parties_ws/devel/setup.bash
 
 ###
-catkin build -cs --workspace ~/projects/control_ws/  --mem-limit 30% -j 4
+catkin build -cs --workspace ~/projects/control_ws/  --mem-limit 30% -j 4 --cmake-args -DCMAKE_BUILD_TYPE=Release
 source ~/projects/control_ws/devel/setup.bash
 
 ###
