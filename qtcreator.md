@@ -12,7 +12,7 @@ Always run _qtcreator_ from terminal to source the ROS environmental variable
 
 ## set tag and indent size
 
-Pleas set "Tab size" and "Indent size" equal to 2 in _Tools->Options->Text Editor->Behavior_. This helps portability of the indentation.
+Pleas set "Tab size" and "Indent size" equal to 2 in _Tools->Options->Text Editor->Behavior_ and "Backspace indentation" to None. This helps portability of the indentation.
 
 ## open a package the first time
 There are two methods to correctly import a package, in both cases you have to compile the package once from terminal before importing the package.
