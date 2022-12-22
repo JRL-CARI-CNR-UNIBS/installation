@@ -52,3 +52,6 @@
     local-name: motion/motion_planning_development_tests
     uri: https://github.com/JRL-CARI-CNR-UNIBS/motion_planning_development_tests.git
     version: cesare-devel
+- git:
+    local-name: moveit/moveit_planning_helper
+    uri: https://github.com/CNR-STIIMA-IRAS/moveit_planning_helper.git

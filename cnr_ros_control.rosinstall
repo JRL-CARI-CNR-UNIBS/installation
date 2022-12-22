@@ -19,3 +19,6 @@
 - git:
     local-name: cnr_robot_visual_tools
     uri: https://bitbucket.org/CNR-ITIA/cnr_robot_visual_tools
+- git:
+    local-name: rosdyn
+    uri: https://github.com/CNR-STIIMA-IRAS/rosdyn.git
