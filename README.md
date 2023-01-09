@@ -109,3 +109,5 @@ gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 64
 gsettings set org.gnome.shell.extensions.dash-to-dock unity-backlit-items true
 gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
 ```
+### Ubuntu bug fix
+* Disable "Use hardware acceleration when available" if Google Chrome won't open and freeze your pc.
