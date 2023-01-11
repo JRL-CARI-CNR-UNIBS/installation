@@ -1,6 +1,6 @@
 - git:
     local-name: devices/robotiq
-    uri: https://github.com/ros-industrial/robotiq
+    uri: https://github.com/TAMS-Group/robotiq
 - git:
     local-name: devices/robots/ur/Universal_Robots_ROS_Driver
     uri: https://github.com/UniversalRobots/Universal_Robots_ROS_Driver
