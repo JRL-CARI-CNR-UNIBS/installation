@@ -26,3 +26,7 @@ source ~/projects/sharework_ws/devel/setup.bash
 ###
 catkin build -cs --workspace ~/projects/cell_ws/  --mem-limit 30% -j 4
 source ~/projects/cell_ws/devel/setup.bash
+
+###
+catkin build -cs --workspace ~/projects/test_ws/  --mem-limit 30% -j 4
+source ~/projects/test_ws/devel/setup.bash
