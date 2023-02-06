@@ -259,7 +259,7 @@ alias compile_ws='source  ~/projects/installation/compile_all_ws.bash'
 
 Also, put the following line in your .bashrc file to configure your ROSCONSOLE (ROS_INFO, WARN, ERROR) print:
 ```
-export ROSCONSOLE_FORMAT='[${severity}] [${time}] [${node}] [${line}]: ${message}'
+export ROSCONSOLE_FORMAT='[${severity}, ${function},${line}]: ${message}'
 
 ```
 
