@@ -263,6 +263,37 @@ export ROSCONSOLE_FORMAT='[${severity}, ${function},${line}]: ${message}'
 
 ```
 
+### Shortcuts to ws sourcing
+
+You can create auto-completable shortcuts, e.g. to source a single workspace.
+In your .bashrc :
+
+```
+# create function to source workspace
+ss () {
+  ws=${1:cells_ws}
+  OPT=$'opt'
+  BASHRC=$'bashrc'
+  if [ "$ws" == "$OPT" ]; then
+    source /opt/ros/noetic/setup.bash
+  elif [ "$ws" == "$BASHRC" ]; then
+    source /home/mfaroni/.bashrc
+  else
+    source /home/mfaroni/projects/$ws/devel/setup.bash
+  fi
+}
+
+# create tab suggestions (need to put the ws names manually)
+_ss()
+{
+    local cur=${COMP_WORDS[COMP_CWORD]}
+    COMPREPLY=( $(compgen -W "bashrc opt third_parties_ws control_ws planning_ws perception_ws cells_ws" -- $cur) )
+}
+complete -F _ss ss
+
+```
+Now, you can try ```ss``` and tab to see the possible parameters.
+
 ## Visualization
 
 You might consider using PlotJuggler for visualization of topics in ROS.
