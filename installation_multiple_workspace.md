@@ -277,9 +277,9 @@ ss () {
   if [ "$ws" == "$OPT" ]; then
     source /opt/ros/noetic/setup.bash
   elif [ "$ws" == "$BASHRC" ]; then
-    source /home/mfaroni/.bashrc
+    source ~/projects/.bashrc
   else
-    source /home/mfaroni/projects/$ws/devel/setup.bash
+    source ~/projects/$ws/devel/setup.bash
   fi
 }
 
