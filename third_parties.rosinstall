@@ -1,7 +1,7 @@
 - git:
     local-name: devices/robotiq
     uri: https://github.com/TAMS-Group/robotiq
-    version:noetic-devel
+    version: noetic-devel
 - git:
     local-name: devices/robots/ur/Universal_Robots_ROS_Driver
     uri: https://github.com/UniversalRobots/Universal_Robots_ROS_Driver
@@ -28,3 +28,6 @@
 - git:
     local-name: software_modules/Groot
     uri: https://github.com/BehaviorTree/Groot.git
+- git:
+    local-name: software_modules/thread-pool
+    uri: --recurse-submodules https://github.com/JRL-CARI-CNR-UNIBS/thread-pool.git

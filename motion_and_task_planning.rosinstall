@@ -55,3 +55,12 @@
 - git:
     local-name: moveit/moveit_planning_helper
     uri: https://github.com/CNR-STIIMA-IRAS/moveit_planning_helper.git
+- git:
+    local-name: motion/human_aware_cost_functions
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/human_aware_cost_functions.git
+- git:
+    local-name: motion/human_aware_cost_functions_tests
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/human_aware_cost_functions_tests.git
+- git:
+    local-name: neural_networks/nn_distance
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/nn_distance.git
