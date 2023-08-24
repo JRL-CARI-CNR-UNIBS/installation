@@ -42,6 +42,14 @@ Cannot connect to the UR10e robot:
 ```
 catkin clean --orphans
 ```
+### Optimization flags
+In the CMAKE File add these flags
+```
+add_compile_options(-std=c++14 -funroll-loops -Ofast)
+set(CMAKE_BUILD_TYPE Release)
+```
+see [here](https://gcc.gnu.org/onlinedocs/gcc-4.5.2/gcc/Optimize-Options.html) for more info.
+
 
 ### Debug commands
 * disable thread message in gdb:
