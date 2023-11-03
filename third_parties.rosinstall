@@ -28,4 +28,3 @@
 - git:
     local-name: software_modules/Groot
     uri: https://github.com/BehaviorTree/Groot.git
-    version: revert-157-Fix_Build
