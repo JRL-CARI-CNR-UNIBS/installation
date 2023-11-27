@@ -235,7 +235,7 @@ Some ROS packages need to be installed from apt:
 ```
 sudo apt-get install ros-$ROS_DISTRO-trac-ik-kinematics-plugin
 sudo apt-get install ros-$ROS_DISTRO-pilz-industrial-motion
-sudo apt-get install ros-$ROS_DISTRO-chomp-motion-planner
+sudo apt-get install ros-$ROS_DISTRO-moveit-planners-chomp
 sudo apt-get install ros-$ROS_DISTRO-realsense2-description
 sudo apt-get install ros-$ROS_DISTRO-realsense2-camera
 ```
