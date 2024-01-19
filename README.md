@@ -14,7 +14,6 @@ The second saves you times during compilation.
 ### Installation on a single workspace
 _see [here](installation_single_workspace.md)_
 
-
 ### Installation on multiple (overlayed) workspaces
 _see [here](installation_multiple_workspace.md)_
 
@@ -26,6 +25,9 @@ _see [here](qtcreator.md)_
 
 ## Configure Atom <a name="atom"></a>
 _see [here](atom.md)_
+
+## ChatGPT from terminal <a name="chat-gpt"></a>
+_see [here](chat-gpt.md)_
 
 ## Troubleshooting with Sharework cell <a name="troubleshoot"></a>
 
@@ -59,7 +61,7 @@ set print thread-events off
 ```
 
 ### Colored ROS_INFO_STREAM
-Copy the code of these files [.cpp](https://github.com/JRL-CARI-CNR-UNIBS/installation/blob/master/log.cpp), [.h](https://github.com/JRL-CARI-CNR-UNIBS/installation/blob/master/log.h) to define colored `ROS_INFO_STREAM`
+Copy the code from these files [.cpp](https://github.com/JRL-CARI-CNR-UNIBS/installation/blob/master/log.cpp), [.h](https://github.com/JRL-CARI-CNR-UNIBS/installation/blob/master/log.h) to define colored `ROS_INFO_STREAM`
 
 ### Git commands
 _see [here](git_useful_commands.md)_
@@ -99,6 +101,8 @@ function cd {
 ### How to write a README.md
 
 README files are Markdown files. Take a look at [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet) for Markdown commands.
+
+Modern text editors like Sublime Text and VScode allows you to preview Markdown files locally. _see [here](atom.md)_
 
 ### Ubuntu appearance
 
