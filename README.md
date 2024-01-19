@@ -3,8 +3,9 @@
 1. [Install ROS packages](#ros)
 2. [QtCreator](#qt)
 3. [Atom](#atom)
-4. [Troubleshooting with Sharework cell](#troubleshoot)
-5. [Useful stuff](#tricks)
+4. [ChatGPT from terminal](#chat-gpt)
+5. [Troubleshooting with Sharework cell](#troubleshoot)
+6. [Useful stuff](#tricks)
 
 ## Install ROS packages <a name="ros"></a>
 
