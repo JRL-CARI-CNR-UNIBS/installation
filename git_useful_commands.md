@@ -29,6 +29,12 @@ git status
   git commit -m "write your comment here"
   git push
   ```
+Note: ```git add -A``` adds all the modified files for the commit. It is recommended to create consistent and scoped commits to retrieve a commit in the future.
+To do so, it is usually necessary to add only some files or even parts of a file:
+
+  ```git add <filename>  ``` only adds the specified file
+  ```git add -p <filename>  ``` opens a window that asks you if you want to add chunks of the file
+
 ### Get files from online repository <a name="pull"></a>
 You can:
 * download the changes of your branch present online but not present locally:
