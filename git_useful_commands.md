@@ -12,7 +12,7 @@
 
 ## A quick guide to Git <a name="git-no-deep-shit"></a>
 
-Take may want to take a look at this [guide](https://rogerdudler.github.io/git-guide/) to familiarize with Git versioning.
+You may want to take a look at this [guide](https://rogerdudler.github.io/git-guide/) to familiarize with Git versioning.
 
 If you're really hungry for knowledge, here is a [500+ pages book](https://git-scm.com/book/en/v2) about Git.
 
@@ -30,12 +30,12 @@ git status
   git commit -m "write your comment here"
   git push
   ```
-Note: ```git add -A``` adds all the modified files for the commit. It is recommended to create consistent and scoped commits to retrieve a commit in the future.
+**Note:** ```git add -A``` adds all the modified files for the commit. It is recommended to create consistent and scoped commits to retrieve a commit in the future.
 To do so, it is usually necessary to add only some files or even parts of a file. To this end, you may want to use:
 
-  ```git add <filename>  ``` only adds the specified file
+*  ```git add <filename>  ``` only adds the specified file
 
-  ```git add -p <filename>  ``` opens a window that asks you if you want to add chunks of the file
+*  ```git add -p <filename>  ``` opens a window that asks you if you want to add chunks of the file
 
 ### Get files from online repository <a name="pull"></a>
 You can:
