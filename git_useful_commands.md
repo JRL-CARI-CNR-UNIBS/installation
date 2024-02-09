@@ -112,7 +112,7 @@ The simplest (yet, unsafe) way to avoid this is to store your credentials once f
 git config --global credential.helper store
 git pull
 ```
-see details (here)[https://stackoverflow.com/questions/35942754/how-can-i-save-username-and-password-in-git].
+Find more details here: [https://stackoverflow.com/questions/35942754/how-can-i-save-username-and-password-in-git].
 
 
 ### Git difftool <a name="difftool"></a>
