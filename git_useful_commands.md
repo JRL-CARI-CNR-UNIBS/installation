@@ -7,7 +7,8 @@
 5. [Get files from online repository](#pull)
 6. [Check and create branches](#branches)
 7. [Create a GitHub repository](#create)
-8. [Git difftool](#difftool)
+8. [Store credential](#credentials)
+9. [Git difftool](#difftool)
 
 ## A quick guide to Git <a name="git-no-deep-shit"></a>
 
@@ -102,6 +103,17 @@ git push -u origin <new_branch>
    git commit -m "your message"
    git push --set-upstream origin master
   ```
+
+### Store credentials <a name="credentials"></a>
+
+If Github asks you to insert your Name and Password (now, Token) every time you push or pull from a repo.
+The simplest (yet, unsafe) way to avoid this is to store your credentials once for all.
+```
+git config --global credential.helper store
+git pull
+```
+see details (here)[https://stackoverflow.com/questions/35942754/how-can-i-save-username-and-password-in-git].
+
 
 ### Git difftool <a name="difftool"></a>
 
