@@ -2,6 +2,9 @@
     local-name: cnr_logger
     uri: https://github.com/CNR-STIIMA-IRAS/cnr_logger
 - git:
+    local-name: common/cnr_param
+    uri: https://github.com/CNR-STIIMA-IRAS/cnr_param
+- git:
     local-name: realtime_utilities
     uri:  https://github.com/CNR-STIIMA-IRAS/realtime_utilities
 - git:
