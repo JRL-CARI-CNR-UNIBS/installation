@@ -3,13 +3,13 @@
     uri: https://github.com/JRL-CARI-CNR-UNIBS/mqtt_scene_integration.git
 - git:
     local-name: sharework_assembly
-    uri: https://bitbucket.org/iras-ind/sharework_assembly.git
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/sharework_assembly
 - git:
     local-name: sharework_benchmark
     uri: https://github.com/JRL-CARI-CNR-UNIBS/sharework_benchmark.git
 - git:
     local-name: sharework_cell
-    uri: https://bitbucket.org/iras-ind/sharework_cell.git
+    uri: https://github.com/JRL-CARI-CNR-UNIBS/sharework_cell
 - git:
     local-name: sharework_task_planning
     uri: https://github.com/JRL-CARI-CNR-UNIBS/sharework_task_planning.git
