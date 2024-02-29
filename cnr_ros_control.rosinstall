@@ -25,3 +25,6 @@
 - git:
     local-name: rosdyn
     uri: https://github.com/CNR-STIIMA-IRAS/rosdyn.git
+- git:
+    local-name: ur_control/ur_cb3_hw
+    uri: https://CNR-ITIA@bitbucket.org/iras-ind/ur_cb3_hw.git
