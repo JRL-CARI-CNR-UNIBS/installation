@@ -6,8 +6,7 @@
 4. [ChatGPT from terminal](#chat-gpt)
 5. [Troubleshooting with Sharework cell](#troubleshoot)
 6. [Useful stuff](#tricks)
-
-## Install ROS packages <a name="ros"></a>
+7. [Guides and tutorials](#guides)
 
 Installation of the JRL-CARI Workspace can be done in a single workspace or a multiple workspaces.
 The second saves you times during compilation.
@@ -123,4 +122,8 @@ gsettings set org.gnome.shell.extensions.dash-to-dock unity-backlit-items true
 gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
 ```
 ### Ubuntu bug fix
-* Disable "Use hardware acceleration when available" if Google Chrome won't open and freeze your pc.
+* Disable "Use hardware acceleration when available" if Google Chrome won't open and freeze your PC.
+
+## GUIDES AND TUTORIAL <a name="guides"></a>
+
+Modern CMake [here]([https://jon.sprig.gs/blog/post/1940](https://gist.github.com/mbinna/c61dbb39bca0e4fb7d1f73b0d66a4fd1)
