@@ -126,4 +126,6 @@ gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
 
 ## GUIDES AND TUTORIAL <a name="guides"></a>
 
-Modern CMake [here]([https://jon.sprig.gs/blog/post/1940](https://gist.github.com/mbinna/c61dbb39bca0e4fb7d1f73b0d66a4fd1)
+Modern CMake 
+[guide]((https://gist.github.com/mbinna/c61dbb39bca0e4fb7d1f73b0d66a4fd1)
+[example](https://github.com/schweitzer/modern-cmake-tutorial)
