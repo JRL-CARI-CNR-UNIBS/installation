@@ -73,7 +73,7 @@ ROS2 tips are [here](./bash_tips.md).
 Copy these commands into your .bashrc file:
 * see git branch name next to the path in the terminal. It also show the status of the branch (unstaged files, sync with remote), see [here](https://jon.sprig.gs/blog/post/1940) for details
 
-```
+```bash
 force_color_prompt=yes
 color_prompt=yes
 parse_git_branch() {
