@@ -2,7 +2,7 @@
 
 ## Easy way
 
-Note: This method of installation is thorugh the main distribution repositories. It is an easy procedure but the version installed is not the latest one. The version installed on Ubuntu 20.04 has some annoying bugs (but they absolutely do not compromise the use of Qtcreator).
+Note: This method of installation is through the main distribution repositories. It is an easy procedure but the version installed is not the latest one (it is euphemism). The version installed on Ubuntu 20.04 has some annoying bugs (but they absolutely do not compromise the use of Qtcreator).
 
 Install the IDE:
 ``` console
@@ -40,7 +40,8 @@ chmod a+x qt-unified-linux-x64-online.run
 ```console
 ./qt-unified-linux-x64-online.run
 ```
-5. Follow the instructions to install the latest version of Qtcreator. Probably it will ask you to log in with your Qt account (or to create one). Note that the installer will automatically select to install some unnecessary extensions (more than 10 GB of download). Uncheck them, you will download only the IDE (less than 1 GB of download).
+5. Follow the instructions to install the latest version of Qtcreator. Probably it will ask you to log in with your Qt account (or to create one). **You can skip it starting the installer without internet connection, once the installation is complete you can re-connect**.
+Note that the installer will automatically select to install some unnecessary extensions (more than 10 GB of download). Uncheck them, you will download only the IDE (less than 1 GB of download).
 6. Add an alias to ~.bashrc file to be able to launch Qtcreator from the terminal (necessary to work with ROS):
 ```console
 alias qtcreator='~/Qt/Tools/QtCreator/bin/qtcreator'

@@ -67,6 +67,9 @@ Copy the code from these files [.cpp](https://github.com/JRL-CARI-CNR-UNIBS/inst
 _see [here](git_useful_commands.md)_
 
 ### Bash tips
+
+ROS2 tips are [here](./bash_tips.md).
+
 Copy these commands into your .bashrc file:
 * see git branch name next to the path in the terminal. It also show the status of the branch (unstaged files, sync with remote), see [here](https://jon.sprig.gs/blog/post/1940) for details
 
