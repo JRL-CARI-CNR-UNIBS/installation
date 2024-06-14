@@ -1,6 +1,6 @@
 # Bash tips for `.bashrc` or `.profile`
 
-(Ugly scripts that could have been better)
+(Ugly scripts that can be helpful)
 
 **Important:** To have the workspace-related scripts working, the workspace name should end with `_ws` and should not contain other underscores
 
