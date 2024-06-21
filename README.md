@@ -66,6 +66,9 @@ Copy the code from these files [.cpp](https://github.com/JRL-CARI-CNR-UNIBS/inst
 ### Git commands
 _see [here](git_useful_commands.md)_
 
+### Colcon tips
+_see [here](colcon_tips.md)_
+
 ### Bash tips
 
 ROS2 tips are [here](./bash_tips.md).
@@ -93,7 +96,7 @@ fi
 unset color_prompt force_color_prompt
 ```
 
-* automatic ls after cd or roscd
+* automatic `ls` after `cd` or `roscd`
 
 ```
 function cd {
