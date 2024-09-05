@@ -18,7 +18,7 @@ In _Tools->Options->C++_ import ["good_man.xml"](https://github.com/JRL-CARI-CNR
 ## open a package the first time
 There are two methods to correctly import a package, in both cases you have to compile the package once from terminal before importing the package.
 
-### option 1
+### option 1  ::warning:: not tested for ROS2
 
 - Click on Tools->options
 
@@ -29,7 +29,7 @@ where **[WORKSPACE]** is the workspace name of the package you want to open.
 
 - open the CMakeLists.txt file of the package
 
-### option 2
+### option 2 (it works also for colcon/ROS2)
 
 
 - open the CMakeLists.txt file of the package
